@@ -12,7 +12,7 @@ public class ReadNumber {
         System.out.println("Nhập số cần chuyển: ");
         int number = scanner.nextInt();
         String[] string =
-                {"One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "};
+                {"One ", "Two ", "Three ", "Four ", "Five ", "Six ", "Seven ", "Eight ", "Nine "}; // string[a-1] + hundered ... a = 2 string[1] = one hundered
         String[] string2 =
                 {"Ten ", "Eleven ", "Twelve ", "Thirteen ", "Fourteen ", "Fifteen ", "Sixteen ", "Seventeen ", "Eighteen ", "Nineteen "};
         while (number >= 1000) {
