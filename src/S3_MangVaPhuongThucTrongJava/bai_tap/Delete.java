@@ -44,4 +44,5 @@ public class Delete {
             System.out.println("Mảng vừa xoá phần tử là: " + Arrays.toString(arr));
         }
     }
+
 }

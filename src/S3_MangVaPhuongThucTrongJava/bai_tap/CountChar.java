@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CountChar {
     public static void main(String[] args) {
-        int ;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhập vào chuỗi: ");
         String str = scanner.nextLine();
