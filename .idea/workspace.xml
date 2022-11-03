@@ -5,23 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/CircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/RectangleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Apple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Chicken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/edible/Edible.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S4_LopVaDoiTuongTrongJava/thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S4_LopVaDoiTuongTrongJava/thuc_hanh/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/MoveablePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Mian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Mian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/CircleComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/CircleComparatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S8_CleanAndRefactoring/bai_tap/TennisGame.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,7 +41,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2FzVWGxhhwy6Xn696Z6B2GJp7nO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -192,7 +195,7 @@
       <workItem from="1667362270447" duration="122000" />
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
-      <workItem from="1667482936418" duration="937000" />
+      <workItem from="1667482936418" duration="1976000" />
     </task>
     <servers />
   </component>
