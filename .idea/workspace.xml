@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S3_MangVaPhuongThucTrongJava/thuc_hanh/MaximumValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S3_MangVaPhuongThucTrongJava/thuc_hanh/SmallValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S3_MangVaPhuongThucTrongJava/thuc_hanh/TemperatureApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/array/length.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/CircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/RectangleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S6_Inheritance/thuc_hanh/Shape.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S1_Introduction_to_Java/thuc_hanh/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S1_Introduction_to_Java/thuc_hanh/SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Module2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S4_LopVaDoiTuongTrongJava/thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S4_LopVaDoiTuongTrongJava/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/MoveablePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/MoveablePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/point_and_moveablepoint/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Mian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Mian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S6_Inheritance/bai_tap/triangle/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -29,6 +36,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2FzVWGxhhwy6Xn696Z6B2GJp7nO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -44,6 +54,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/CodeGym/Phone-Manager-main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,13 +68,13 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SmallValue">
-    <configuration name="FindValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.FindValue" />
+  <component name="RunManager" selected="Application.ReverseStack">
+    <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.bai_tap.Convert.Convert" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.*" />
+          <option name="PATTERN" value="S11_DSAStackQueue.bai_tap.Convert.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaximumValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.MaximumValue" />
+    <configuration name="CountString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.bai_tap.Count.CountString" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.*" />
+          <option name="PATTERN" value="S11_DSAStackQueue.bai_tap.Count.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmallValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.SmallValue" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.bai_tap.Queue.Palindrome" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.*" />
+          <option name="PATTERN" value="S11_DSAStackQueue.bai_tap.Queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemTime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S1_Introduction_to_Java.thuc_hanh.SystemTime" />
+    <configuration name="ReverseStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.bai_tap.Stack.ReverseStack" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S1_Introduction_to_Java.thuc_hanh.*" />
+          <option name="PATTERN" value="S11_DSAStackQueue.bai_tap.Stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +121,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemperatureApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.TemperatureApp" />
+    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S10_DSA.bai_tap.LinkeDlist.TestMyLinkedList" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S3_MangVaPhuongThucTrongJava.thuc_hanh.*" />
+          <option name="PATTERN" value="S10_DSA.bai_tap.LinkeDlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UCLN" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S2_VongLapTrongJava.thuc_hanh.UCLN" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S2_VongLapTrongJava.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SmallValue" />
-        <item itemvalue="Application.TemperatureApp" />
-        <item itemvalue="Application.SystemTime" />
-        <item itemvalue="Application.MaximumValue" />
-        <item itemvalue="Application.FindValue" />
+        <item itemvalue="Application.ReverseStack" />
+        <item itemvalue="Application.Palindrome" />
+        <item itemvalue="Application.CountString" />
+        <item itemvalue="Application.Convert" />
+        <item itemvalue="Application.TestMyLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +170,29 @@
       <workItem from="1665541421579" duration="11133000" />
       <workItem from="1665562800666" duration="1288000" />
       <workItem from="1665565370942" duration="4220000" />
+      <workItem from="1665575500188" duration="2985000" />
+      <workItem from="1665624123591" duration="9191000" />
+      <workItem from="1665649271562" duration="2586000" />
+      <workItem from="1665710143650" duration="12581000" />
+      <workItem from="1666093488030" duration="603000" />
+      <workItem from="1666099463086" duration="14000" />
+      <workItem from="1666161784833" duration="1449000" />
+      <workItem from="1666231998374" duration="689000" />
+      <workItem from="1666232961964" duration="19000" />
+      <workItem from="1666234069654" duration="211000" />
+      <workItem from="1666240932025" duration="565000" />
+      <workItem from="1666530706158" duration="3067000" />
+      <workItem from="1666603122165" duration="1342000" />
+      <workItem from="1666836105170" duration="350000" />
+      <workItem from="1666852855227" duration="717000" />
+      <workItem from="1666863002804" duration="33000" />
+      <workItem from="1666863302317" duration="107000" />
+      <workItem from="1667182242485" duration="1205000" />
+      <workItem from="1667323524382" duration="9000" />
+      <workItem from="1667362270447" duration="122000" />
+      <workItem from="1667371211393" duration="259000" />
+      <workItem from="1667375548777" duration="9000" />
+      <workItem from="1667482936418" duration="937000" />
     </task>
     <servers />
   </component>
