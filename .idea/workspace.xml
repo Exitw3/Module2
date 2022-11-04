@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S14_ThuatToanSapXep/thuc_hanh/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S14_ThuatToanSapXep/thuc_hanh/BubbleSortByStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S13_ThuatToanTimKiem/thuc_hanh/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S13_ThuatToanTimKiem/thuc_hanh/BinarySearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
+  <component name="RunManager" selected="Application.BubbleSortByStep">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S13_ThuatToanTimKiem.thuc_hanh.BinarySearch" />
       <module name="Module2" />
@@ -89,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListQueueClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.thuc_hanh.MyLinkedListQueue.LinkedListQueueClient" />
+    <configuration name="BubbleSortByStep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S14_ThuatToanSapXep.thuc_hanh.BubbleSortByStep" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S11_DSAStackQueue.thuc_hanh.MyLinkedListQueue.*" />
+          <option name="PATTERN" value="S14_ThuatToanSapXep.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BubbleSortByStep" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.LinkedListQueueClient" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +186,7 @@
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
       <workItem from="1667482936418" duration="2918000" />
-      <workItem from="1667535902865" duration="11297000" />
+      <workItem from="1667535902865" duration="12264000" />
     </task>
     <servers />
   </component>
