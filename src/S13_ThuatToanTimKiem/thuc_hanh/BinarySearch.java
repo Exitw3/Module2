@@ -25,5 +25,4 @@ public class BinarySearch {
         System.out.println(binarySearch(list, 5));
         System.out.println(binarySearch(list, 80));
     }
-
 }
