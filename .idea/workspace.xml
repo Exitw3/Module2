@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/AgeComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S13_ThuatToanTimKiem/thuc_hanh/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,20 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main">
+  <component name="RunManager" selected="Application.BinarySearch">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S13_ThuatToanTimKiem.thuc_hanh.BinarySearch" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S13_ThuatToanTimKiem.thuc_hanh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LinkedListQueueClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.thuc_hanh.MyLinkedListQueue.LinkedListQueueClient" />
       <module name="Module2" />
@@ -116,19 +127,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S10_DSA.thuc_hanh.Linkedlist.TestMyLinkedList" />
-      <module name="Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S10_DSA.thuc_hanh.Linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UCLN" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S2_VongLapTrongJava.thuc_hanh.UCLN" />
       <module name="Module2" />
@@ -144,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.LinkedListQueueClient" />
         <item itemvalue="Application.MyListTest" />
-        <item itemvalue="Application.TestMyLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +186,7 @@
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
       <workItem from="1667482936418" duration="2918000" />
-      <workItem from="1667535902865" duration="7440000" />
+      <workItem from="1667535902865" duration="8568000" />
     </task>
     <servers />
   </component>
