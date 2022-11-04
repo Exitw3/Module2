@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S14_ThuatToanSapXep/thuc_hanh/SelectionSort.java" afterDir="false" />
-    </list>
+    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +58,7 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SelectionSort">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S13_ThuatToanTimKiem.thuc_hanh.BinarySearch" />
       <module name="Module2" />
@@ -100,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S4_LopVaDoiTuongTrongJava.bai_tap.StopWatch.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.*" />
+          <option name="PATTERN" value="S4_LopVaDoiTuongTrongJava.bai_tap.StopWatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.SelectionSort" />
         <item itemvalue="Application.BubbleSortByStep" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +183,7 @@
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
       <workItem from="1667482936418" duration="2918000" />
-      <workItem from="1667535902865" duration="12839000" />
+      <workItem from="1667535902865" duration="13152000" />
     </task>
     <servers />
   </component>
