@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/AbstractAndInterfaceTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Chicken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Orange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Tiger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/edible/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/TestMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/CircleComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/CircleComparatorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S8_CleanAndRefactoring/bai_tap/TennisGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/AbstractAndInterfaceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Apple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S7_AbtractAndInterface/thuc_hanh/interface_edible/Apple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,7 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReverseStack">
+  <component name="RunManager" selected="Application.TestMap">
     <configuration name="Convert" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.bai_tap.Convert.Convert" />
       <module name="Module2" />
@@ -124,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S10_DSA.bai_tap.LinkeDlist.TestMyLinkedList" />
+    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S12_JavaCollectionFramework.thuc_hanh.TestMap" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S10_DSA.bai_tap.LinkeDlist.*" />
+          <option name="PATTERN" value="S12_JavaCollectionFramework.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMap" />
         <item itemvalue="Application.ReverseStack" />
         <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.CountString" />
         <item itemvalue="Application.Convert" />
-        <item itemvalue="Application.TestMyLinkedList" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +187,8 @@
       <workItem from="1667362270447" duration="122000" />
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
-      <workItem from="1667482936418" duration="1976000" />
+      <workItem from="1667482936418" duration="2918000" />
+      <workItem from="1667535902865" duration="1924000" />
     </task>
     <servers />
   </component>
