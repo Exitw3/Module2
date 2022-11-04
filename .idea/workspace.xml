@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/HashMaoAnhSetMap/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/HashMaoAnhSetMap/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/thuc_hanh/ComparableAndComparator/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +63,7 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main">
     <configuration name="LinkedListQueueClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.thuc_hanh.MyLinkedListQueue.LinkedListQueueClient" />
       <module name="Module2" />
@@ -102,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S12_JavaCollectionFramework.thuc_hanh.TestMap" />
+    <configuration name="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S12_JavaCollectionFramework.thuc_hanh.*" />
+          <option name="PATTERN" value="S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.S12_JavaCollectionFramework.thuc_hanh.ComparableAndComparator.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.LinkedListQueueClient" />
         <item itemvalue="Application.MyListTest" />
         <item itemvalue="Application.TestMyLinkedList" />
-        <item itemvalue="Application.TestMap" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +188,7 @@
       <workItem from="1667371211393" duration="259000" />
       <workItem from="1667375548777" duration="9000" />
       <workItem from="1667482936418" duration="2918000" />
-      <workItem from="1667535902865" duration="6063000" />
+      <workItem from="1667535902865" duration="7440000" />
     </task>
     <servers />
   </component>
