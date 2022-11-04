@@ -1,4 +1,4 @@
-package S12_JavaCollectionFramework.thuc_hanh.MyLinkedListQueue;
+package S11_DSAStackQueue.thuc_hanh.MyLinkedListQueue;
 
 public class LinkedListQueueClient {
     public static void main(String[] args) {
