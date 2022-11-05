@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/bai_tap/Use_ArrayList_LinkedList_In_JavaCollectionFramework/ArrayList/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/bai_tap/Use_ArrayList_LinkedList_In_JavaCollectionFramework/ArrayList/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S12_JavaCollectionFramework/bai_tap/Use_ArrayList_LinkedList_In_JavaCollectionFramework/ArrayList/ProductView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +28,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2FzVWGxhhwy6Xn696Z6B2GJp7nO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -190,7 +185,7 @@
       <workItem from="1667375548777" duration="9000" />
       <workItem from="1667482936418" duration="2918000" />
       <workItem from="1667535902865" duration="13513000" />
-      <workItem from="1667654616652" duration="2248000" />
+      <workItem from="1667654616652" duration="2567000" />
     </task>
     <servers />
   </component>
