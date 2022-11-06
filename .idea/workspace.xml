@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/ReadAndWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/ReadAndWriteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/TestReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/TestReadWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/result" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/result" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/string" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/string" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S17_IOBinaryFileAndSerialization/thuc_hanh/CoppyFile/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1667482936418" duration="2918000" />
       <workItem from="1667535902865" duration="13513000" />
       <workItem from="1667654616652" duration="4558000" />
-      <workItem from="1667725706820" duration="2007000" />
+      <workItem from="1667725706820" duration="2367000" />
     </task>
     <servers />
   </component>
