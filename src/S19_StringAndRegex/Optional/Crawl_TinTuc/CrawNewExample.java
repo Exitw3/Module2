@@ -1,4 +1,4 @@
-package S19_StringAndRegex.thuc_hanh.Crawl;
+package S19_StringAndRegex.Optional.Crawl_TinTuc;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
