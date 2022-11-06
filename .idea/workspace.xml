@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="" />
+    <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/FindMaxValue/FindMaxValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/FindMaxValue/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/FindMaxValue/number" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/FindMaxValue/result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,13 +65,26 @@
       <recent name="array" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Palindrome">
+  <component name="RunManager" selected="Application.FindMaxValue">
     <configuration name="Brackets" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S11_DSAStackQueue.Optional.CheckBrackets.Brackets" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="S11_DSAStackQueue.Optional.CheckBrackets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindMaxValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="S16_IOTextFile.thuc_hanh.FindMaxValue.FindMaxValue" />
+      <module name="Module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="S16_IOTextFile.thuc_hanh.FindMaxValue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,19 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SelectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S14_ThuatToanSapXep.thuc_hanh.SelectionSort" />
-      <module name="Module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="S14_ThuatToanSapXep.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UCLN" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="S2_VongLapTrongJava.thuc_hanh.UCLN" />
       <module name="Module2" />
@@ -140,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindMaxValue" />
         <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.Brackets" />
         <item itemvalue="Application.NumberS" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +192,7 @@
       <workItem from="1667482936418" duration="2918000" />
       <workItem from="1667535902865" duration="13513000" />
       <workItem from="1667654616652" duration="4558000" />
-      <workItem from="1667725706820" duration="738000" />
+      <workItem from="1667725706820" duration="1386000" />
     </task>
     <servers />
   </component>
