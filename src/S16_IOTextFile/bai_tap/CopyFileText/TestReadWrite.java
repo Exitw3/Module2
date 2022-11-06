@@ -1,4 +1,4 @@
-package S16_IOTextFile.thuc_hanh.CopyFileText;
+package S16_IOTextFile.bai_tap.CopyFileText;
 
 import java.util.List;
 

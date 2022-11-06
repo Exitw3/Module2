@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1cf347-81cb-4711-8f50-593f7bab15f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/TestReadWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/result" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/string" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/ReadAndWriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/ReadAndWriteFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/TestReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/TestReadWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/result" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/S16_IOTextFile/thuc_hanh/CopyFileText/string" beforeDir="false" afterPath="$PROJECT_DIR$/src/S16_IOTextFile/bai_tap/CopyFileText/string" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,11 +119,11 @@
       </method>
     </configuration>
     <configuration name="TestReadWrite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S16_IOTextFile.thuc_hanh.CopyFileText.TestReadWrite" />
+      <option name="MAIN_CLASS_NAME" value="S16_IOTextFile.bai_tap.CopyFileText.TestReadWrite" />
       <module name="Module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="S16_IOTextFile.thuc_hanh.CopyFileText.*" />
+          <option name="PATTERN" value="S16_IOTextFile.bai_tap.CopyFileText.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -193,7 +192,7 @@
       <workItem from="1667482936418" duration="2918000" />
       <workItem from="1667535902865" duration="13513000" />
       <workItem from="1667654616652" duration="4558000" />
-      <workItem from="1667725706820" duration="1695000" />
+      <workItem from="1667725706820" duration="2007000" />
     </task>
     <servers />
   </component>
