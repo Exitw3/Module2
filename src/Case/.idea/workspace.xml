@@ -47,7 +47,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Admin">
+  <component name="RunManager" selected="Application.User">
     <configuration name="Admin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Admin" />
       <module name="Case" />
@@ -78,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Admin" />
         <item itemvalue="Application.User" />
+        <item itemvalue="Application.Admin" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.demo" />
       </list>
@@ -108,7 +108,7 @@
       <workItem from="1668155266467" duration="4801000" />
       <workItem from="1668321657747" duration="3862000" />
       <workItem from="1668325832051" duration="1912000" />
-      <workItem from="1668335221498" duration="10006000" />
+      <workItem from="1668335221498" duration="11017000" />
     </task>
     <servers />
   </component>
@@ -125,20 +125,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/view/LoginView.java</url>
-          <line>114</line>
-          <properties class="view.LoginView" method="loginProgram">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

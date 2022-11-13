@@ -620,7 +620,7 @@ public class UserView {
     private String inputEmail(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập email của bạn (VD: lythanhtung@codegym.vn)");
+                System.out.println("Nhập email của bạn (VD: Nguyen@codegym.vn)");
                 break;
             case UPDATE:
                 System.out.println("Nhập email mới: ");
@@ -665,7 +665,7 @@ public class UserView {
     private String inputFullName(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập tên (Ký tự đầu của từng từ phải ghi hoa, VD: Lý Thanh Tùng)");
+                System.out.println("Nhập tên (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
                 break;
             case UPDATE:
                 System.out.println("Nhập họ và tên mới: ");
@@ -674,26 +674,26 @@ public class UserView {
         System.out.print(" => ");
         String fullName;
         while (!ValidateUtils.isFullNameValid(fullName = scanner.nextLine())) {
-            System.out.println("Ký tự đầu của từng từ phải ghi hoa, VD: Lý Thanh Tùng");
+            System.out.println("Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên");
             System.out.print(" => ");
         }
         return fullName;
     }
 
     public String inputPassWord() {
-        System.out.println("Nhập mật khẩu (mật khẩu phải >= 8 kí tự, VD: Tung@codegym1)");
+        System.out.println("Nhập mật khẩu (mật khẩu phải >= 8 kí tự, VD: Nguyen123@)");
         System.out.print(" => ");
         String password;
         while (!ValidateUtils.isPassWordValid(password = scanner.nextLine())) {
             System.out.println("Mật khẩu phải >= 8 kí tự trong đó chứa  " +
-                    "ít nhất 1 ký tự viết hoa, viết thường, chữ số và kí tự đặt biệt. VD: Tung@123");
+                    "ít nhất 1 ký tự viết hoa, viết thường, chữ số và kí tự đặt biệt. VD: Nguyen123@");
             System.out.print(" => ");
         }
         return password;
     }
 
     private String inputUserName() {
-        System.out.println("Nhập tài khoản (6-20 kí tự viết thường không bao gồm dấu cách, có ký tự '-', '_', '.'). VD: tung-codegym");
+        System.out.println("Nhập tài khoản (6-20 kí tự viết thường không bao gồm dấu cách, có ký tự '-', '_', '.'). VD: Nguyen123");
         System.out.print(" => ");
         String username;
         do {

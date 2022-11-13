@@ -73,7 +73,7 @@ public class ProductView {
     private String inputManufacturer(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập nhà sản xuất (Tên nhà sản xuất phải ghi in hoa, VD: GOOGLE)");
+                System.out.println("Nhập nhà sản xuất (Tên nhà sản xuất phải ghi in hoa, VD: MIDEA.)");
                 break;
             case UPDATE:
                 System.out.println("Nhập tên nhà sản xuất mới: ");
@@ -82,7 +82,7 @@ public class ProductView {
         System.out.print(" => ");
         String manufacturer;
         while (!ValidateUtils.isManufacturerValid(manufacturer = scanner.nextLine())) {
-            System.out.println("Tên nhà sản xuất phải ghi in hoa, VD: GOOGLE.");
+            System.out.println("Tên nhà sản xuất phải ghi in hoa, VD: MIDEA.");
             System.out.print(" => ");
         }
         return manufacturer;
@@ -128,7 +128,7 @@ public class ProductView {
     private String inputProductName(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập tên sản phẩm. (VD: Google pixel 5)");
+                System.out.println("Nhập tên sản phẩm. (VD: Cây nước nóng lạnh Midea)");
                 break;
             case UPDATE:
                 System.out.println("Nhập tên sản phẩm mới: ");
@@ -138,7 +138,7 @@ public class ProductView {
         String productName;
         do {
             if (!ValidateUtils.isProductNameValid(productName = scanner.nextLine())) {
-                System.out.println("Nhập tên sản phẩm (VD: Google pixel 5)");
+                System.out.println("Nhập tên sản phẩm (VD: Cây nước nóng lạnh Midea)");
                 System.out.print(" => ");
                 continue;
             }

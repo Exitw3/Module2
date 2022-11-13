@@ -17,11 +17,11 @@ public class OrderViewLauncher {
     private static final int RETURN = 8;
     private static final int EXIT = 0;
     private static final Scanner scanner = new Scanner(System.in);
-    private static final int FIND_ORDER = 4;
-    private static final int SORT_ORDER = 5;
     private static final int STATISTICAL_BY_DAY = 1;
     private static final int STATISTICAL_BY_MONTH = 2;
     private static final int STATISTICAL_BY_YEAR = 3;
+    private static final int FIND_ORDER = 4;
+    private static final int SORT_ORDER = 5;
     private static final int RESTORE = 7;
     private static final OrderView orderView = new OrderView();
 
