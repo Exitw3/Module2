@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService implements IUserService {
-    public final static String DATA_USER_PATH = "Product-Manager/data/users.csv";
+    public final static String DATA_USER_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\users.csv";
     private static UserService instance;
 
     private UserService() {
@@ -47,12 +47,12 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public User passwordRetrieval(String userName, String email, String appliances, Role role) {
+    public User passwordRetrieval(String userName, String email, String phone, Role role) {
         List<User> users = findAll();
         for (User user : users) {
             if (user.getUserName().equals(userName)
                     && user.getEmail().equals(email)
-                    && user.getAppliances().equals(appliances)
+                    && user.getPhone().equals(phone)
                     && user.getRole() == role) {
                 return user;
             }
@@ -76,13 +76,13 @@ public class UserService implements IUserService {
                 String passWord = newUser.getPassWord();
                 String fullName = newUser.getFullName();
                 String email = newUser.getEmail();
-                String appliances = newUser.getAddress();
+                String phone = newUser.getPhone();
                 String address = newUser.getAddress();
                 Role role = newUser.getRole();
                 user.setPassWord(passWord);
                 user.setFullName(fullName);
                 user.setEmail(email);
-                user.setAppliances(appliances);
+                user.setPhone(phone);
                 user.setAddress(address);
                 user.setRole(role);
                 user.setUpdatedAt(Instant.now());
@@ -127,7 +127,7 @@ public class UserService implements IUserService {
     public boolean existsByPhone(String phone) {
         List<User> users = findAll();
         for (User user : users) {
-            if (user.getAppliances().equals(phone))
+            if (user.getPhone().equals(phone))
                 return true;
         }
         return false;
@@ -233,14 +233,14 @@ public class UserService implements IUserService {
         List<User> users = findAll();
         if (type == TypeSort.ASC) {
             users.sort((o1, o2) -> {
-                int result = o1.getAppliances().compareTo(o2.getAppliances());
+                int result = o1.getPhone().compareTo(o2.getPhone());
                 if (result == 0) return 0;
                 return result > 0 ? 1 : -1;
             });
         }
         if (type == TypeSort.DESC) {
             users.sort((o1, o2) -> {
-                int result = o1.getAppliances().compareTo(o2.getAppliances());
+                int result = o1.getPhone().compareTo(o2.getPhone());
                 if (result == 0) return 0;
                 return result > 0 ? -1 : 1;
             });
@@ -338,7 +338,7 @@ public class UserService implements IUserService {
         List<User> users = findAll();
         List<User> usersFind = new ArrayList<>();
         for (User item : users) {
-            if ((item.getAppliances().toUpperCase()).contains(value.toUpperCase())) {
+            if ((item.getPhone().toUpperCase()).contains(value.toUpperCase())) {
                 usersFind.add(item);
             }
         }

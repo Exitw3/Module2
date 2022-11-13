@@ -22,7 +22,7 @@ public class UserView {
     }
 
     public void showUser(List<User> users, InputOption option) {
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DANH SÁCH TÀI KHOẢN ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════════════════════════════════════════════════════════════════════════════════════ DANH SÁCH TÀI KHOẢN ═════════════════════════════════════════════════════════════════════════════════════════ ");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-5s%-9s | %-5s%-12s | %-6s%-14s | %-13s%-20s | %-6s%-8s | %-2s%-22s | %-1s%-6s | %-4s%-18s | %-2s%-20s |\n",
                 "", "ID",
@@ -42,7 +42,7 @@ public class UserView {
                     "", user.getUserName(),
                     "", user.getFullName(),
                     "", user.getEmail(),
-                    "", user.getAppliances(),
+                    "", user.getPhone(),
                     "", user.getAddress(),
                     "", user.getRole(),
                     "", InstantUtils.instantToString(user.getCreatedAt()),
@@ -258,7 +258,7 @@ public class UserView {
 
     private void findById() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░░░ TÌM KIẾM THEO ID ░░░░░░░░");
+        System.out.println("═════════ TÌM KIẾM THEO ID ═════════");
         System.out.print("Nhập id: ");
         long value = Long.parseLong(scanner.nextLine());
         User user = userService.findById(value);
@@ -273,7 +273,7 @@ public class UserView {
 
     private void findByAddress() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░ TÌM KIẾM THEO ĐỊA CHỈ ░░░░░░");
+        System.out.println("══════ TÌM KIẾM THEO ĐỊA CHỈ ══════");
         System.out.print("Nhập địa chỉ: ");
         String value = scanner.nextLine();
         List<User> usersFind = userService.findByAddress(value);
@@ -286,7 +286,7 @@ public class UserView {
 
     private void findByPhone() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░ TÌM KIẾM BẰNG SĐT ░░░░░░░");
+        System.out.println("══════ TÌM KIẾM BẰNG SĐT ══════");
         System.out.print("Enter phone: ");
         String value = scanner.nextLine();
         List<User> usersFind = userService.findByPhone(value);
@@ -299,7 +299,7 @@ public class UserView {
 
     private void findByEmail() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░░░ TÌM KIẾM BẰNG EMAIL ░░░░░░░░░");
+        System.out.println("══════ TÌM KIẾM BẰNG EMAIL ══════");
         System.out.print("Nhập email: ");
         String value = scanner.nextLine();
         List<User> usersFind = userService.findByEmail(value);
@@ -312,7 +312,7 @@ public class UserView {
 
     private void findByFullName() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░ TÌM KIẾM BẰNG TÊN ░░░░░░░");
+        System.out.println("══════ TÌM KIẾM BẰNG TÊN ══════");
         System.out.print("Nhập tên người dùng: ");
         String value = scanner.nextLine();
         List<User> usersFind = userService.findByFullName(value);
@@ -325,7 +325,7 @@ public class UserView {
 
     private void findByUserName() {
         showUser(userService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░ TÌM KIẾM BẰNG TÀI KHOẢN ░░░░░░░");
+        System.out.println("══════ TÌM KIẾM BẰNG TÀI KHOẢN ══════");
         System.out.print("Nhập tên tài khoản: ");
         String value = scanner.nextLine();
         List<User> usersFind = userService.findByUserName(value);
@@ -337,7 +337,7 @@ public class UserView {
     }
 
     private void sortById() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO ID ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO ID ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -360,7 +360,7 @@ public class UserView {
     }
 
     private void sortByUserName() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO TÀI KHOẢN ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO TÀI KHOẢN ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -383,7 +383,7 @@ public class UserView {
     }
 
     private void sortByFullName() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO TÊN NGƯỜI DÙNG ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO TÊN NGƯỜI DÙNG ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -406,7 +406,7 @@ public class UserView {
     }
 
     private void sortByEmail() {
-        System.out.println("░░░░░░░░░░ SẮP XẾP THEO EMAIL ░░░░░░░░░░");
+        System.out.println("═════════ SẮP XẾP THEO EMAIL ═════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -429,7 +429,7 @@ public class UserView {
     }
 
     private void sortByPhone() {
-        System.out.println("░░░░░░░░░░ SẮP XẾP THEO SĐT ░░░░░░░░░░");
+        System.out.println("═════════ SẮP XẾP THEO SĐT ═════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -452,7 +452,7 @@ public class UserView {
     }
 
     private void sortByRole() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO QUYỀN NGƯỜI DÙNG ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO QUYỀN NGƯỜI DÙNG ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -475,7 +475,7 @@ public class UserView {
     }
 
     private void sortByAddress() {
-        System.out.println("░░░░░░░░░░ SẮP XẾP THEO ĐỊA CHỈ ░░░░░░░░░░");
+        System.out.println("══════════ SẮP XẾP THEO ĐỊA CHỈ ══════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -516,9 +516,9 @@ public class UserView {
     }
 
     public void updatePhone(User newUser) {
-        String oldPhone = newUser.getAppliances();
+        String oldPhone = newUser.getPhone();
         String phone = inputPhone(InputOption.UPDATE);
-        newUser.setAppliances(phone);
+        newUser.setPhone(phone);
         userService.update(newUser);
         System.out.printf("Đã thay đổi số điện thoại từ %s thành %s\n", oldPhone, phone);
         AppUtils.pressAnyKeyToContinue();
@@ -713,62 +713,62 @@ public class UserView {
     }
 
     private static void menuSortUser() {
-        System.out.println("░░░░░░░░░ SẮP XẾP TÀI KHOẢN ░░░░░░░░░░");
-        System.out.println("░                                    ░");
-        System.out.println("░    1. Sắp xếp theo Id.             ░");
-        System.out.println("░    2. Sắp xếp theo tài khoản.      ░");
-        System.out.println("░    3. Sắp xếp theo tên.            ░");
-        System.out.println("░    4. Sắp xếp theo email.          ░");
-        System.out.println("░    5. Sắp xếp theo số điện thoại.  ░");
-        System.out.println("░    6. Sắp xếp theo quyền.          ░");
-        System.out.println("░    7. Sắp xếp theo địa chỉ.        ░");
-        System.out.println("░    8. Trở lại.                     ░");
-        System.out.println("░    0. Thoát.                       ░");
-        System.out.println("░                                    ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════ SẮP XẾP TÀI KHOẢN ══════════");
+        System.out.println("║                                     ║");
+        System.out.println("║    1. Sắp xếp theo Id.              ║");
+        System.out.println("║    2. Sắp xếp theo tài khoản.       ║");
+        System.out.println("║    3. Sắp xếp theo tên.             ║");
+        System.out.println("║    4. Sắp xếp theo email.           ║");
+        System.out.println("║    5. Sắp xếp theo số điện thoại.   ║");
+        System.out.println("║    6. Sắp xếp theo quyền.           ║");
+        System.out.println("║    7. Sắp xếp theo địa chỉ.         ║");
+        System.out.println("║    8. Trở lại.                      ║");
+        System.out.println("║    0. Thoát.                        ║");
+        System.out.println("║                                     ║");
+        System.out.println("═══════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private static void menuFindUser() {
-        System.out.println("░░░░░░░░░ TÌM KIẾM TÀI KHOẢN ░░░░░░░░░");
-        System.out.println("░                                    ░");
-        System.out.println("░    1. Tìm kiếm theo Id.            ░");
-        System.out.println("░    2. Tìm kiếm theo tài khoản.     ░");
-        System.out.println("░    3. Tìm kiếm theo tên.           ░");
-        System.out.println("░    4. Tìm kiếm theo email.         ░");
-        System.out.println("░    5. Tìm kiếm theo số điện thoại. ░");
-        System.out.println("░    6. Tìm kiếm theo địa chỉ.       ░");
-        System.out.println("░    7. Trở lại.                     ░");
-        System.out.println("░    0. Thoát.                       ░");
-        System.out.println("░                                    ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════ TÌM KIẾM TÀI KHOẢN ═════════");
+        System.out.println("║                                    ║");
+        System.out.println("║    1. Tìm kiếm theo Id.            ║");
+        System.out.println("║    2. Tìm kiếm theo tài khoản.     ║");
+        System.out.println("║    3. Tìm kiếm theo tên.           ║");
+        System.out.println("║    4. Tìm kiếm theo email.         ║");
+        System.out.println("║    5. Tìm kiếm theo số điện thoại. ║");
+        System.out.println("║    6. Tìm kiếm theo địa chỉ.       ║");
+        System.out.println("║    7. Trở lại.                     ║");
+        System.out.println("║    0. Thoát.                       ║");
+        System.out.println("║                                    ║");
+        System.out.println("══════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private static void menuUpdateUser() {
-        System.out.println("░░░░░░ CHỈNH SỬA TÀI KHOẢN ░░░░░░░");
-        System.out.println("░                                ░");
-        System.out.println("░    1. Chỉnh sửa tên.           ░");
-        System.out.println("░    2. Chỉnh sửa email.         ░");
-        System.out.println("░    3. Chỉnh sửa số điện thoại. ░");
-        System.out.println("░    4. Chỉnh sửa địa chỉ.       ░");
-        System.out.println("░    5. Chỉnh sửa quyền.         ░");
-        System.out.println("░    6. Trở lại.                 ░");
-        System.out.println("░    0. Thoát.                   ░");
-        System.out.println("░                                ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════ CHỈNH SỬA TÀI KHOẢN ═══════");
+        System.out.println("║                                 ║");
+        System.out.println("║    1. Chỉnh sửa tên.            ║");
+        System.out.println("║    2. Chỉnh sửa email.          ║");
+        System.out.println("║    3. Chỉnh sửa số điện thoại.  ║");
+        System.out.println("║    4. Chỉnh sửa địa chỉ.        ║");
+        System.out.println("║    5. Chỉnh sửa quyền.          ║");
+        System.out.println("║    6. Trở lại.                  ║");
+        System.out.println("║    0. Thoát.                    ║");
+        System.out.println("║                                 ║");
+        System.out.println("═══════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
 
     private static void menuSetRole() {
-        System.out.println("░░░░░░░░░ CHỌN QUYỀN ░░░░░░░░░");
-        System.out.println("░          1. ADMIN          ░");
-        System.out.println("░          2. USER           ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════ CHỌN QUYỀN ═════════");
+        System.out.println("║          1. ADMIN          ║");
+        System.out.println("║          2. USER           ║");
+        System.out.println("══════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }

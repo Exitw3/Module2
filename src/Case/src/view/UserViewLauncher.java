@@ -62,18 +62,18 @@ public class UserViewLauncher {
     }
 
     public static void menuUserManager() {
-        System.out.println("░░░░░░░░░░░ QUẢN LÝ TÀI KHOẢN ░░░░░░░░░░░");
-        System.out.println("░                                       ░");
-        System.out.println("░       1. Hiện danh sách tài khoản.    ░");
-        System.out.println("░       2. Thêm tài khoản.              ░");
-        System.out.println("░       3. Chỉnh sửa tài khoản          ░");
-        System.out.println("░       4. Xóa tài khoản.               ░");
-        System.out.println("░       5. Tìm kiếm tài khoản.          ░");
-        System.out.println("░       6. Sắp xếp tài khoản.           ░");
-        System.out.println("░       7. Trở lại.                     ░");
-        System.out.println("░       0. Thoát.                       ░");
-        System.out.println("░                                       ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════ QUẢN LÝ TÀI KHOẢN ═══════════");
+        System.out.println("║                                       ║");
+        System.out.println("║       1. Hiện danh sách tài khoản.    ║");
+        System.out.println("║       2. Thêm tài khoản.              ║");
+        System.out.println("║       3. Chỉnh sửa tài khoản          ║");
+        System.out.println("║       4. Xóa tài khoản.               ║");
+        System.out.println("║       5. Tìm kiếm tài khoản.          ║");
+        System.out.println("║       6. Sắp xếp tài khoản.           ║");
+        System.out.println("║       7. Trở lại.                     ║");
+        System.out.println("║       0. Thoát.                       ║");
+        System.out.println("║                                       ║");
+        System.out.println("═════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }

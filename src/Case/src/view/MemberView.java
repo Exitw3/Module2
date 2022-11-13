@@ -120,7 +120,7 @@ public class MemberView {
     }
 
     private static void showInfoAccount(User user) {
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ THÔNG TIN TÀI KHOẢN ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════════════════════════════════════════════════════ THÔNG TIN TÀI KHOẢN ═══════════════════════════════════════════════════════════");
         System.out.println("------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-5s%-9s | %-3s%-14s | %-9s%-17s | %-14s%-19s | %-5s%-9s | %-4s%-11s |\n",
                 "", "ID",
@@ -136,7 +136,7 @@ public class MemberView {
                 "", user.getUserName(),
                 "", user.getFullName(),
                 "", user.getEmail(),
-                "", user.getAppliances(),
+                "", user.getPhone(),
                 "", user.getAddress()
         );
         System.out.println("------------------------------------------------------------------------------------------------------------------------------------------");
@@ -162,32 +162,32 @@ public class MemberView {
     }
 
     private static void menuMemberManager() {
-        System.out.println("░░░░░░░░░░░░░░░░░░ MENU ░░░░░░░░░░░░░░░░░");
-        System.out.println("║                                       ║");
-        System.out.println("║          1. Cài đặt tài khoản.        ║");
-        System.out.println("║          2. Quản lý sản phẩm.         ║");
-        System.out.println("║          3. Quản lý đơn hàng.         ║");
-        System.out.println("║          4. Đăng xuất.                ║");
-        System.out.println("║          0. Thoát.                    ║");
-        System.out.println("║                                       ║");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════════════ MENU ══════════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║          1. Cài đặt tài khoản.         ║");
+        System.out.println("║          2. Quản lý sản phẩm.          ║");
+        System.out.println("║          3. Quản lý đơn hàng.          ║");
+        System.out.println("║          4. Đăng xuất.                 ║");
+        System.out.println("║          0. Thoát.                     ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }
 
     private static void menuSettingAccount() {
-        System.out.println("░░░░░░░░░░░░░░░░░░ MENU ░░░░░░░░░░░░░░░░░");
-        System.out.println("║                                       ║");
-        System.out.println("║      1. Hiện thông tin tài khoản.     ║");
-        System.out.println("║      2. Thay đổi mật khẩu.            ║");
-        System.out.println("║      3. Thay đổi họ tên.              ║");
-        System.out.println("║      4. Thay đổi email.               ║");
-        System.out.println("║      5. Thay đổi số điện thoại.       ║");
-        System.out.println("║      6. Thay đổi địa chỉ.             ║");
-        System.out.println("║      7. Trở lại.                      ║");
-        System.out.println("║      0. Thoát.                        ║");
-        System.out.println("║                                       ║");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════════════ MENU ══════════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║      1. Hiện thông tin tài khoản.      ║");
+        System.out.println("║      2. Thay đổi mật khẩu.             ║");
+        System.out.println("║      3. Thay đổi họ tên.               ║");
+        System.out.println("║      4. Thay đổi email.                ║");
+        System.out.println("║      5. Thay đổi số điện thoại.        ║");
+        System.out.println("║      6. Thay đổi địa chỉ.              ║");
+        System.out.println("║      7. Trở lại.                       ║");
+        System.out.println("║      0. Thoát.                         ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }

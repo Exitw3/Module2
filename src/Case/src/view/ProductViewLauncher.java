@@ -68,19 +68,19 @@ public class ProductViewLauncher {
     }
 
     private static void menuProductsManager() {
-        System.out.println("░░░░░░░░░░░░░░ MENU PRODUCT ░░░░░░░░░░░░░░");
-        System.out.println("░                                        ░");
-        System.out.println("░        1. Hiện danh sách sản phẩm.     ░");
-        System.out.println("░        2. Thêm sản phẩm.               ░");
-        System.out.println("░        3. Chỉnh sửa sản phẩm.          ░");
-        System.out.println("░        4. Xóa sản phẩm.                ░");
-        System.out.println("░        5. Tìm kiếm sản phẩm.           ░");
-        System.out.println("░        6. Sắp xếp sản phẩm.            ░");
-        System.out.println("░        7. Khôi phục sản phẩm.          ░");
-        System.out.println("░        8. Trở lại.                     ░");
-        System.out.println("░        0. Thoát.                       ░");
-        System.out.println("░                                        ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════════ MENU PRODUCT ══════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║        1. Hiện danh sách sản phẩm.     ║");
+        System.out.println("║        2. Thêm sản phẩm.               ║");
+        System.out.println("║        3. Chỉnh sửa sản phẩm.          ║");
+        System.out.println("║        4. Xóa sản phẩm.                ║");
+        System.out.println("║        5. Tìm kiếm sản phẩm.           ║");
+        System.out.println("║        6. Sắp xếp sản phẩm.            ║");
+        System.out.println("║        7. Khôi phục sản phẩm.          ║");
+        System.out.println("║        8. Trở lại.                     ║");
+        System.out.println("║        0. Thoát.                       ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }
@@ -121,15 +121,15 @@ public class ProductViewLauncher {
     }
 
     private static void menuMemberProductsManager() {
-        System.out.println("░░░░░░░░░░░░░░ MENU PRODUCT ░░░░░░░░░░░░░░");
-        System.out.println("░                                        ░");
-        System.out.println("░        1. Hiện danh sách sản phẩm.     ░");
-        System.out.println("░        2. Tìm kiếm sản phẩm.           ░");
-        System.out.println("░        3. Sắp xếp sản phẩm.            ░");
-        System.out.println("░        4. Trở lại.                     ░");
-        System.out.println("░        0. Thoát.                       ░");
-        System.out.println("░                                        ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════════ MENU PRODUCT ══════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║        1. Hiện danh sách sản phẩm.     ║");
+        System.out.println("║        2. Tìm kiếm sản phẩm.           ║");
+        System.out.println("║        3. Sắp xếp sản phẩm.            ║");
+        System.out.println("║        4. Trở lại.                     ║");
+        System.out.println("║        0. Thoát.                       ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }

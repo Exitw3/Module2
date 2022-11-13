@@ -125,49 +125,49 @@ public class OrderViewLauncher {
     }
 
     public static void menuOrderManager() {
-        System.out.println("░░░░░░░░░░░░░░░ MENU ORDER ░░░░░░░░░░░░░░");
-        System.out.println("░                                       ░");
-        System.out.println("░       1. Hiện danh sách đơn hàng.     ░");
-        System.out.println("░       2. Thêm đơn hàng.               ░");
-        System.out.println("░       3. Chỉnh sửa đơn hàng.          ░");
-        System.out.println("░       4. Xóa đơn hàng.                ░");
-        System.out.println("░       5. Tìm kiếm đơn hàng.           ░");
-        System.out.println("░       6. Sắp xếp đơn hàng.            ░");
-        System.out.println("░       7. Khôi phục đơn hàng.          ░");
-        System.out.println("░       8. Trở lại.                     ░");
-        System.out.println("░       0. Thoát.                       ░");
-        System.out.println("░                                       ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════ MENU ORDER ═══════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║       1. Hiện danh sách đơn hàng.      ║");
+        System.out.println("║       2. Thêm đơn hàng.                ║");
+        System.out.println("║       3. Chỉnh sửa đơn hàng.           ║");
+        System.out.println("║       4. Xóa đơn hàng.                 ║");
+        System.out.println("║       5. Tìm kiếm đơn hàng.            ║");
+        System.out.println("║       6. Sắp xếp đơn hàng.             ║");
+        System.out.println("║       7. Khôi phục đơn hàng.           ║");
+        System.out.println("║       8. Trở lại.                      ║");
+        System.out.println("║       0. Thoát.                        ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }
 
     public static void menuMemberOrderManager() {
-        System.out.println("░░░░░░░░░░░░░░░ MENU ORDER ░░░░░░░░░░░░░░");
-        System.out.println("░                                       ░");
-        System.out.println("░       1. Hiện danh sách đơn hàng.     ░");
-        System.out.println("░       2. Thêm đơn hàng.               ░");
-        System.out.println("░       3. Chỉnh sửa đơn hàng.          ░");
-        System.out.println("░       4. Tìm kiếm đơn hàng.           ░");
-        System.out.println("░       5. Sắp xếp đơn hàng.            ░");
-        System.out.println("░       8. Trở lại.                     ░");
-        System.out.println("░       0. Thoát.                       ░");
-        System.out.println("░                                       ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════ MENU ORDER ═══════════════");
+        System.out.println("║                                        ║");
+        System.out.println("║       1. Hiện danh sách đơn hàng.      ║");
+        System.out.println("║       2. Thêm đơn hàng.                ║");
+        System.out.println("║       3. Chỉnh sửa đơn hàng.           ║");
+        System.out.println("║       4. Tìm kiếm đơn hàng.            ║");
+        System.out.println("║       5. Sắp xếp đơn hàng.             ║");
+        System.out.println("║       8. Trở lại.                      ║");
+        System.out.println("║       0. Thoát.                        ║");
+        System.out.println("║                                        ║");
+        System.out.println("══════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }
 
     public static void menuStatisticalManager() {
-        System.out.println("░░░░░░░░░░░░░░░ THỐNG KÊ ░░░░░░░░░░░░░░");
-        System.out.println("░                                     ░");
-        System.out.println("░       1. Thống kê theo ngày.        ░");
-        System.out.println("░       2. Thống kê theo tháng.       ░");
-        System.out.println("░       3. Thống kê theo năm.         ░");
-        System.out.println("░       8. Trở lại.                   ░");
-        System.out.println("░       0. Thoát.                     ░");
-        System.out.println("░                                     ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════ THỐNG KÊ ═══════════════");
+        System.out.println("║                                      ║");
+        System.out.println("║        1. Thống kê theo ngày.        ║");
+        System.out.println("║        2. Thống kê theo tháng.       ║");
+        System.out.println("║        3. Thống kê theo năm.         ║");
+        System.out.println("║        8. Trở lại.                   ║");
+        System.out.println("║        0. Thoát.                     ║");
+        System.out.println("║                                      ║");
+        System.out.println("════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }

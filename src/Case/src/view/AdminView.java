@@ -50,7 +50,7 @@ public class AdminView {
     }
 
     private static void menuAdminOption() {
-        System.out.println("░░░░░░░░░░░░░░░░░ MENU ░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════════════ MENU ═════════════════");
         System.out.println("║                                      ║");
         System.out.println("║         1. Quản lý tài khoản.        ║");
         System.out.println("║         2. Quản lý sản phẩm.         ║");
@@ -59,7 +59,7 @@ public class AdminView {
         System.out.println("║         5. Đăng xuất.                ║");
         System.out.println("║         0. Thoát.                    ║");
         System.out.println("║                                      ║");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print("=> ");
     }

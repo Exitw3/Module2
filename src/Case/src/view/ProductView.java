@@ -23,7 +23,7 @@ public class ProductView {
     }
 
     public void showProduct(List<Product> products, InputOption option) {
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DANH SÁCH SẢN PHẨM ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════════════════════════════════════════════════════════════════════════ DANH SÁCH SẢN PHẨM ═════════════════════════════════════════════════════════════════════════════");
         System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-5s%-9s | %-16s%-16s | %-10s%-14s | %-4s%-14s | %-8s%-12s | %-4s%-18s | %-2s%-20s |\n",
                 "", "ID",
@@ -325,7 +325,7 @@ public class ProductView {
 
     private void findByManufacturer() {
         showProduct(productService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░ TÌM KIẾM THEO NHÀ SẢN XUẤT ░░░░░");
+        System.out.println("═════ TÌM KIẾM THEO NHÀ SẢN XUẤT ═════");
         System.out.print("Nhập tên nhà sản xuất: ");
         String productName = scanner.nextLine();
         List<Product> productsFind = productService.findByManufacturer(productName);
@@ -338,7 +338,7 @@ public class ProductView {
 
     private void findByProductName() {
         showProduct(productService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░░ TÌM KIẾM THEO TÊN SẢN PHẨM ░░░░░░░");
+        System.out.println("═══════ TÌM KIẾM THEO TÊN SẢN PHẨM ═══════");
         System.out.print("Nhập tên sản phẩm: ");
         String productName = scanner.nextLine();
         List<Product> productsFind = productService.findByName(productName);
@@ -351,7 +351,7 @@ public class ProductView {
 
     private void findByProductId() {
         showProduct(productService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░░░░░ TÌM KIẾM THEO ID ░░░░░░░░░░");
+        System.out.println("══════════ TÌM KIẾM THEO ID ══════════");
         System.out.print("Nhập Id sản phẩm: ");
         long value = Long.parseLong(scanner.nextLine());
         Product product = productService.findById(value);
@@ -409,7 +409,7 @@ public class ProductView {
     }
 
     private void sortByCreateTime() {
-        System.out.println("░░░░░░ SẮP XẾP THEO THỜI GIAN TẠO ░░░░░░");
+        System.out.println("══════ SẮP XẾP THEO THỜI GIAN TẠO ══════");
         AppUtils.menuSort();
         int option;
         try {
@@ -432,7 +432,7 @@ public class ProductView {
     }
 
     private void sortByManufacturer() {
-        System.out.println("░░░░░░░ SẮP XẾP THEO NHÀ SẢN XUẤT ░░░░░░░");
+        System.out.println("═══════ SẮP XẾP THEO NHÀ SẢN XUẤT ═══════");
         AppUtils.menuSort();
         int option;
         try {
@@ -455,7 +455,7 @@ public class ProductView {
     }
 
     private void sortByQuantity() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO SỐ LƯỢNG ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO SỐ LƯỢNG ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -478,7 +478,7 @@ public class ProductView {
     }
 
     private void sortByPrice() {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO GIÁ ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO GIÁ ════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -501,7 +501,7 @@ public class ProductView {
     }
 
     private void sortByProductName() {
-        System.out.println("░░░░░░ SẮP XẾP THEO TÊN SẢN PHẨM ░░░░░░");
+        System.out.println("══════ SẮP XẾP THEO TÊN SẢN PHẨM ══════");
         AppUtils.menuSort();
         int option;
         try {
@@ -524,7 +524,7 @@ public class ProductView {
     }
 
     private void sortById() {
-        System.out.println("░░░░░░░░░░ SẮP XẾP THEO ID ░░░░░░░░░░");
+        System.out.println("══════════ SẮP XẾP THEO ID ══════════");
         AppUtils.menuSort();
         int option;
         try {
@@ -547,47 +547,47 @@ public class ProductView {
     }
 
     private void menuSortProduct() {
-        System.out.println("░░░░░░░░░░ SẮP XẾP SẢN PHẨM ░░░░░░░░░");
-        System.out.println("░                                   ░");
-        System.out.println("░    1. Sắp xếp theo Id.            ░");
-        System.out.println("░    2. Sắp xếp theo tên sản phẩm.  ░");
-        System.out.println("░    3. Sắp xếp theo giá.           ░");
-        System.out.println("░    4. Sắp xếp theo số lượng.      ░");
-        System.out.println("░    5. Sắp xếp theo nhà sản xuất.  ░");
-        System.out.println("░    6. Sắp xếp theo thời gian tạo. ░");
-        System.out.println("░    7. Trở lại.                    ░");
-        System.out.println("░    0. Thoát.                      ░");
-        System.out.println("░                                   ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("══════════ SẮP XẾP SẢN PHẨM ══════════");
+        System.out.println("║                                    ║");
+        System.out.println("║    1. Sắp xếp theo Id.             ║");
+        System.out.println("║    2. Sắp xếp theo tên sản phẩm.   ║");
+        System.out.println("║    3. Sắp xếp theo giá.            ║");
+        System.out.println("║    4. Sắp xếp theo số lượng.       ║");
+        System.out.println("║    5. Sắp xếp theo nhà sản xuất.   ║");
+        System.out.println("║    6. Sắp xếp theo thời gian tạo.  ║");
+        System.out.println("║    7. Trở lại.                     ║");
+        System.out.println("║    0. Thoát.                       ║");
+        System.out.println("║                                    ║");
+        System.out.println("══════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private static void menuFindProduct() {
-        System.out.println("░░░░░░░░░ TÌM KIẾM SẢN PHẨM ░░░░░░░░░");
-        System.out.println("░                                   ░");
-        System.out.println("░    1. Tìm kiếm theo Id.           ░");
-        System.out.println("░    2. Tìm kiếm theo tên.          ░");
-        System.out.println("░    3. Tìm kiếm theo nhà sản xuất. ░");
-        System.out.println("░    4. Trở lại.                    ░");
-        System.out.println("░    0. Thoát.                      ░");
-        System.out.println("░                                   ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════ TÌM KIẾM SẢN PHẨM ═════════");
+        System.out.println("║                                   ║");
+        System.out.println("║    1. Tìm kiếm theo Id.           ║");
+        System.out.println("║    2. Tìm kiếm theo tên.          ║");
+        System.out.println("║    3. Tìm kiếm theo nhà sản xuất. ║");
+        System.out.println("║    4. Trở lại.                    ║");
+        System.out.println("║    0. Thoát.                      ║");
+        System.out.println("║                                   ║");
+        System.out.println("═════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private static void menuUpdateProduct() {
-        System.out.println("░░░░░░░░ CHỈNH SỬA SẢN PHẨM ░░░░░░░");
-        System.out.println("░                                 ░");
-        System.out.println("░     1. Chỉnh sửa tên.           ░");
-        System.out.println("░     2. Chỉnh sửa giá.           ░");
-        System.out.println("░     3. Chỉnh sửa số lượng.      ░");
-        System.out.println("░     4. Chỉnh sửa nhà sản xuất.  ░");
-        System.out.println("░     5. Trở lại.                 ░");
-        System.out.println("░     0. Thoát.                   ░");
-        System.out.println("░                                 ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("════════ CHỈNH SỬA SẢN PHẨM ════════");
+        System.out.println("║                                  ║");
+        System.out.println("║     1. Chỉnh sửa tên.            ║");
+        System.out.println("║     2. Chỉnh sửa giá.            ║");
+        System.out.println("║     3. Chỉnh sửa số lượng.       ║");
+        System.out.println("║     4. Chỉnh sửa nhà sản xuất.   ║");
+        System.out.println("║     5. Trở lại.                  ║");
+        System.out.println("║     0. Thoát.                    ║");
+        System.out.println("║                                  ║");
+        System.out.println("════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }

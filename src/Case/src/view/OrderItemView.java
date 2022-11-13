@@ -25,7 +25,7 @@ public class OrderItemView {
     }
 
     public void showOrderItem(List<OrderItem> orderItems, InputOption option) {
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ GIỎ HÀNG ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════════════════════════════════════════ GIỎ HÀNG ═══════════════════════════════════════════════════");
         System.out.println("----------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-5s%-9s | %-11s%-19s | %-7s%-11s | %-2s%-10s | %-5s%-17s |\n",
                 "", "ID",
@@ -120,7 +120,7 @@ public class OrderItemView {
         List<OrderItem> orderItems = orderItemService.findByOrderId(orderId);
         Order order = orderService.findById(orderId);
 
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ HÓA ĐƠN THANH TOÁN ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════════════════════════════ HÓA ĐƠN THANH TOÁN ════════════════════════════════════════");
         System.out.println("║                                                                                                 ║");
         System.out.printf("║                                                                 Thời gian: %16s     ║\n", InstantUtils.instantToString(order.getCreatedAt()));
         System.out.printf("║   Người mua: %-40s                                           ║\n", order.getFullName());
@@ -150,7 +150,7 @@ public class OrderItemView {
         System.out.println("║                                                                                                 ║");
         System.out.printf("║          Cám Ơn Quý Khách!                                     Tổng tiền: %-20s   ║\n", AppUtils.doubleToVND(order.getGrandTotal()));
         System.out.println("║                                                                                                 ║");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════");
     }
 
     private int inputQuantity(InputOption option, long productId) {
@@ -311,14 +311,14 @@ public class OrderItemView {
     }
 
     private static void menuUpdateOrderItem() {
-        System.out.println("░░░░░░░ CHỈNH SỬA SẢN PHẨM  ░░░░░░░");
+        System.out.println("═══════ CHỈNH SỬA SẢN PHẨM  ═══════");
         System.out.println("║                                 ║");
         System.out.println("║      1. Đổi sản phẩm.           ║");
         System.out.println("║      2. Chỉnh sửa số lượng.     ║");
         System.out.println("║      3. Trở lại.                ║");
         System.out.println("║      0. Thoát.                  ║");
         System.out.println("║                                 ║");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════════════════════════");
         System.out.println("Enter your choice: ");
         System.out.print(" => ");
     }

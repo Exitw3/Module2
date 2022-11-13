@@ -30,7 +30,7 @@ public class OrderView {
     }
 
     public void statisticalByDay() {
-        System.out.println("░░░░░░░░░░░░░ THỐNG KÊ THEO NGÀY ░░░░░░░░░░░░");
+        System.out.println("═════════════ THỐNG KÊ THEO NGÀY ═════════════");
         String day = inputDay();
         List<Order> ordersFind = new ArrayList<>();
         List<Order> orders = orderService.findAll();
@@ -40,22 +40,22 @@ public class OrderView {
                 ordersFind.add(order);
             }
         }
-        System.out.printf("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DOANH THU NGÀY %s ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n", day);
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
+        System.out.printf("═════════════════════════════════════════ DOANH THU NGÀY %s ════════════════════════════════════\n", day);
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
                 "", "STT",
                 "", "KHÁCH HÀNG",
                 "", "SĐT",
                 "", "ĐỊA CHỈ",
                 "", "THÀNH TIỀN"
         );
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
         double revenueTotal = 0;
         for (int i = 0; i < ordersFind.size(); i++) {
             Order order = ordersFind.get(i);
             revenueTotal += order.getGrandTotal();
-            System.out.printf("░ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ░\n",
+            System.out.printf("║ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ║\n",
                     "", i + 1,
                     "", order.getFullName(),
                     "", order.getPhone(),
@@ -63,16 +63,16 @@ public class OrderView {
                     "", AppUtils.doubleToVND(order.getGrandTotal())
             );
         }
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░                                                         TỔNG DOANH THU: %-20s%6s  ░\n", AppUtils.doubleToVND(revenueTotal), "");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║                                                         TỔNG DOANH THU: %-20s%6s  ║\n", AppUtils.doubleToVND(revenueTotal), "");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════════");
     }
 
     public void statisticalByMonth() {
-        System.out.println("░░░░░░░░░░░░░ THỐNG KÊ THEO THÁNG ░░░░░░░░░░░░");
+        System.out.println("════════════ THỐNG KÊ THEO THÁNG ════════════");
         String month = inputMonth();
         List<Order> ordersFind = new ArrayList<>();
         List<Order> orders = orderService.findAll();
@@ -82,22 +82,22 @@ public class OrderView {
                 ordersFind.add(order);
             }
         }
-        System.out.printf("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DOANH THU THÁNG %s ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n", month);
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
+        System.out.printf("═════════════════════════════════════ DOANH THU THÁNG %s ═════════════════════════════════════\n", month);
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
                 "", "STT",
                 "", "KHÁCH HÀNG",
                 "", "SĐT",
                 "", "ĐỊA CHỈ",
                 "", "THÀNH TIỀN"
         );
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
         double revenueTotal = 0;
         for (int i = 0; i < ordersFind.size(); i++) {
             Order order = ordersFind.get(i);
             revenueTotal += order.getGrandTotal();
-            System.out.printf("░ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ░\n",
+            System.out.printf("║ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ║\n",
                     "", i + 1,
                     "", order.getFullName(),
                     "", order.getPhone(),
@@ -105,16 +105,16 @@ public class OrderView {
                     "", AppUtils.doubleToVND(order.getGrandTotal())
             );
         }
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░                                                         TỔNG DOANH THU: %-20s%6s  ░\n", AppUtils.doubleToVND(revenueTotal), "");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║                                                         TỔNG DOANH THU: %-20s%6s  ║\n", AppUtils.doubleToVND(revenueTotal), "");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════════");
     }
 
     public void statisticalByYear() {
-        System.out.println("░░░░░░░░░░░░░ THỐNG KÊ THEO NĂM ░░░░░░░░░░░░");
+        System.out.println("═════════════ THỐNG KÊ THEO NĂM ═════════════");
         String year = inputYear();
         List<Order> ordersFind = new ArrayList<>();
         List<Order> orders = orderService.findAll();
@@ -124,22 +124,22 @@ public class OrderView {
                 ordersFind.add(order);
             }
         }
-        System.out.printf("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DOANH THU NĂM %s ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░\n", year);
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
+        System.out.printf("════════════════════════════════════════ DOANH THU NĂM %s ═════════════════════════════════════\n", year);
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
                 "", "STT",
                 "", "KHÁCH HÀNG",
                 "", "SĐT",
                 "", "ĐỊA CHỈ",
                 "", "THÀNH TIỀN"
         );
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
         double revenueTotal = 0;
         for (int i = 0; i < ordersFind.size(); i++) {
             Order order = ordersFind.get(i);
             revenueTotal += order.getGrandTotal();
-            System.out.printf("░ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ░\n",
+            System.out.printf("║ %-3s%-4s | %-2s%-22s | %-2s%-12s | %-2s%-18s | %-2s%-20s ║\n",
                     "", i + 1,
                     "", order.getFullName(),
                     "", order.getPhone(),
@@ -147,43 +147,43 @@ public class OrderView {
                     "", AppUtils.doubleToVND(order.getGrandTotal())
             );
         }
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░                                                                                                     ░");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.printf("░                                                         TỔNG DOANH THU: %-20s%6s  ░\n", AppUtils.doubleToVND(revenueTotal), "");
-        System.out.println("░-----------------------------------------------------------------------------------------------------░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("║                                                                                                     ║");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.printf("║                                                         TỔNG DOANH THU: %-20s%6s  ║\n", AppUtils.doubleToVND(revenueTotal), "");
+        System.out.println("║-----------------------------------------------------------------------------------------------------║");
+        System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════════");
     }
 
 
     private String inputDay() {
-        System.out.println("Nhập ngày (VD: 02-09-2022): ");
+        System.out.println("Nhập ngày (VD: 13-11-2022): ");
         System.out.print(" => ");
         String day;
         while (!ValidateUtils.isDayValid(day = scanner.nextLine().trim())) {
-            System.out.println("Ngày, tháng, năm được phân tách bởi dấu '-' (VD: VD: 02-09-2022)");
+            System.out.println("Ngày, tháng, năm được phân tách bởi dấu '-' (VD: 13-11-2022)");
             System.out.print(" => ");
         }
         return day;
     }
 
     private String inputMonth() {
-        System.out.println("Nhập tháng (VD: 09-2022): ");
+        System.out.println("Nhập tháng (Ví Dụ: 11-2022): ");
         System.out.print(" => ");
         String month;
         while (!ValidateUtils.isMonthValid(month = scanner.nextLine().trim())) {
-            System.out.println("Tháng, năm được phân tách bởi dấu '-' (VD: 09-2022).");
+            System.out.println("Tháng, năm được phân tách bởi dấu '-' (Ví Dụ: 11-2022).");
             System.out.print(" => ");
         }
         return month;
     }
 
     private String inputYear() {
-        System.out.println("Nhập năm (VD: 2022): ");
+        System.out.println("Nhập năm (Ví Dụ: 2022): ");
         System.out.print(" => ");
         String year;
         while (!ValidateUtils.isYearValid(year = scanner.nextLine().trim())) {
-            System.out.println("Năm gồm 4 chữ số (VD: 2022).");
+            System.out.println("Năm gồm 4 chữ số (Ví Dụ: 2022).");
             System.out.print(" => ");
         }
         return year;
@@ -191,7 +191,7 @@ public class OrderView {
 
     public void showOrder(List<Order> orders, InputOption option) {
 
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ DANH SÁCH ĐƠN HÀNG ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═════════════════════════════════════════════════════════════════════════════════════════ DANH SÁCH ĐƠN HÀNG ═════════════════════════════════════════════════════════════════════════════════════════");
         System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.printf("| %-5s%-9s | %-8s%-18s | %-6s%-10s | %-4s%-12s | %-7s%-15s | %-11s%-24s | %-4s%-18s | %-2s%-20s |\n",
                 "", "ID",
@@ -234,12 +234,12 @@ public class OrderView {
             String option = scanner.nextLine();
             switch (option) {
                 case "y":
-                    System.out.println("░░░░░ XEM CHI TIẾT ĐƠN HÀNG ░░░░");
+                    System.out.println("═════ XEM CHI TIẾT ĐƠN HÀNG ═════");
                     orderId = inputId(InputOption.SHOW);
                     orderItemView.showOrderItem(orderItemService.findByOrderId(orderId), InputOption.UPDATE);
                     break;
                 case "i":
-                    System.out.println("░░░░░░░ IN HÓA ĐƠN ░░░░░░");
+                    System.out.println("═══════ IN HÓA ĐƠN ═══════");
                     orderId = inputId(InputOption.SHOW);
                     orderItemView.printProductInvoice(orderId);
                     break;
@@ -592,7 +592,7 @@ public class OrderView {
 
     private void findByUserId() {
         showOrder(orderService.findAll(), InputOption.FIND);
-        System.out.println("░░░░░░ TÌM KIẾM THEO NHÂN VIÊN ░░░░░░");
+        System.out.println("═══════ TÌM KIẾM THEO NHÂN VIÊN ═══════");
         System.out.print("Nhập id nhân viên: ");
         long value = Long.parseLong(scanner.nextLine());
         List<Order> ordersFind = orderService.findByUserId(value);
@@ -612,7 +612,7 @@ public class OrderView {
         if (user.getRole() == Role.USER) {
             showOrder(orderService.findOrderByUserId(userId), InputOption.FIND);
         }
-        System.out.println("░░░░░░░ TÌM KIẾM THEO ĐỊA CHỈ ░░░░░░░");
+        System.out.println("═══════ TÌM KIẾM THEO ĐỊA CHỈ ═══════");
         System.out.print("Nhập địa chỉ cần tìm: ");
         String value = scanner.nextLine();
         List<Order> ordersFind = orderService.findByAddress(value, userId);
@@ -632,7 +632,7 @@ public class OrderView {
         if (user.getRole() == Role.USER) {
             showOrder(orderService.findOrderByUserId(userId), InputOption.FIND);
         }
-        System.out.println("░░░░░ TÌM KIẾM THEO SỐ ĐIỆN THOẠI ░░░░░");
+        System.out.println("═════ TÌM KIẾM THEO SỐ ĐIỆN THOẠI ═════");
         System.out.print("Nhập số điện thoại cần tìm: ");
         String value = scanner.nextLine();
         List<Order> ordersFind = orderService.findByPhone(value, userId);
@@ -652,7 +652,7 @@ public class OrderView {
         if (user.getRole() == Role.USER) {
             showOrder(orderService.findOrderByUserId(userId), InputOption.FIND);
         }
-        System.out.println("░░░░░ TÌM KIẾM THEO KHÁCH HÀNG ░░░░░");
+        System.out.println("═════ TÌM KIẾM THEO KHÁCH HÀNG ═════");
         System.out.print("Nhập tên khách hàng: ");
         String value = scanner.nextLine();
         List<Order> ordersFind = orderService.findByFullName(value, userId);
@@ -672,7 +672,7 @@ public class OrderView {
         if (user.getRole() == Role.USER) {
             showOrder(orderService.findOrderByUserId(userId), InputOption.FIND);
         }
-        System.out.println("░░░░░░░░░░ TÌM KIẾM THEO ID ░░░░░░░░░░");
+        System.out.println("══════════ TÌM KIẾM THEO ID ══════════");
         System.out.print("Nhập id hóa đơn cần tìm: ");
         long value = Long.parseLong(scanner.nextLine());
         Order order = orderService.findById(value);
@@ -687,47 +687,47 @@ public class OrderView {
     }
 
     private static void menuFindOrder() {
-        System.out.println("░░░░░░░░░░░░░░░ TÌM KIẾM ░░░░░░░░░░░░░░");
-        System.out.println("░                                     ░");
-        System.out.println("░   1. Tìm kiếm theo Id.              ░");
-        System.out.println("░   2. Tìm kiếm theo khách hàng.      ░");
-        System.out.println("░   3. Tìm kiếm theo số điện thoại.   ░");
-        System.out.println("░   4. Tìm kiếm theo địa chỉ.         ░");
-        System.out.println("░   5. Tìm kiếm theo nhân viên.       ░");
-        System.out.println("░   6. Trở lại.                       ░");
-        System.out.println("░   0. Thoát.                         ░");
-        System.out.println("░                                     ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════ TÌM KIẾM ═══════════════");
+        System.out.println("║                                      ║");
+        System.out.println("║    1. Tìm kiếm theo Id.              ║");
+        System.out.println("║    2. Tìm kiếm theo khách hàng.      ║");
+        System.out.println("║    3. Tìm kiếm theo số điện thoại.   ║");
+        System.out.println("║    4. Tìm kiếm theo địa chỉ.         ║");
+        System.out.println("║    5. Tìm kiếm theo nhân viên.       ║");
+        System.out.println("║    6. Trở lại.                       ║");
+        System.out.println("║    0. Thoát.                         ║");
+        System.out.println("║                                      ║");
+        System.out.println("════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private static void menuMemberFindOrder() {
-        System.out.println("░░░░░░░░░░░░░░░ TÌM KIẾM ░░░░░░░░░░░░░░");
-        System.out.println("░                                     ░");
-        System.out.println("░   1. Tìm kiếm theo Id.              ░");
-        System.out.println("░   2. Tìm kiếm theo khách hàng.      ░");
-        System.out.println("░   3. Tìm kiếm theo số điện thoại.   ░");
-        System.out.println("░   4. Tìm kiếm theo địa chỉ.         ░");
-        System.out.println("░   5. Trở lại.                       ░");
-        System.out.println("░   0. Thoát.                         ░");
-        System.out.println("░                                     ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════════ TÌM KIẾM ═══════════════");
+        System.out.println("║                                      ║");
+        System.out.println("║    1. Tìm kiếm theo Id.              ║");
+        System.out.println("║    2. Tìm kiếm theo khách hàng.      ║");
+        System.out.println("║    3. Tìm kiếm theo số điện thoại.   ║");
+        System.out.println("║    4. Tìm kiếm theo địa chỉ.         ║");
+        System.out.println("║    5. Trở lại.                       ║");
+        System.out.println("║    0. Thoát.                         ║");
+        System.out.println("║                                      ║");
+        System.out.println("════════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private void menuUpdateOrder() {
-        System.out.println("░░░░░░░░ CHỈNH SỬA ĐƠN HÀNG ░░░░░░░░");
-        System.out.println("░                                  ░");
-        System.out.println("░    1. Chỉnh sửa tên khách hàng.  ░");
-        System.out.println("░    2. Chỉnh sửa số điện thoại.   ░");
-        System.out.println("░    3. Chỉnh sửa địa chỉ.         ░");
-        System.out.println("░    4. Chỉnh sửa giỏ hàng.        ░");
-        System.out.println("░    5. Trở lại.                   ░");
-        System.out.println("░    0. Thoát.                     ░");
-        System.out.println("░                                  ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("════════ CHỈNH SỬA ĐƠN HÀNG ════════");
+        System.out.println("║                                  ║");
+        System.out.println("║    1. Chỉnh sửa tên khách hàng.  ║");
+        System.out.println("║    2. Chỉnh sửa số điện thoại.   ║");
+        System.out.println("║    3. Chỉnh sửa địa chỉ.         ║");
+        System.out.println("║    4. Chỉnh sửa giỏ hàng.        ║");
+        System.out.println("║    5. Trở lại.                   ║");
+        System.out.println("║    0. Thoát.                     ║");
+        System.out.println("║                                  ║");
+        System.out.println("════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
@@ -824,7 +824,7 @@ public class OrderView {
     }
 
     private void sortByCreateTime(long userId) {
-        System.out.println("░░░░░ SẮP XẾP THEO THỜI GIAN TẠO ĐƠN HÀNG ░░░░░");
+        System.out.println("═════ SẮP XẾP THEO THỜI GIAN TẠO ĐƠN HÀNG ═════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -854,7 +854,7 @@ public class OrderView {
     }
 
     private void sortByUserId() {
-        System.out.println("░░░░░░ SẮP XẾP THEO NHÂN VIÊN ░░░░░░");
+        System.out.println("═════ SẮP XẾP THEO NHÂN VIÊN ═════");
         AppUtils.menuSort();
         int option;
         try {
@@ -877,7 +877,7 @@ public class OrderView {
     }
 
     private void sortByGrandTotal(long userId) {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO TỔNG TIỀN ░░░░░░░░");
+        System.out.println("════════ SẮP XẾP THEO TỔNG TIỀN ════════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -907,7 +907,7 @@ public class OrderView {
     }
 
     private void sortByAddress(long userId) {
-        System.out.println("░░░░░░░ SẮP XẾP THEO ĐỊA CHỈ ░░░░░░░");
+        System.out.println("═════ SẮP XẾP THEO ĐỊA CHỈ ═════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -938,7 +938,7 @@ public class OrderView {
     }
 
     private void sortByPhone(long userId) {
-        System.out.println("░░░░░░ SẮP XẾP THEO SỐ ĐIỆN THOẠI ░░░░░░");
+        System.out.println("═════ SẮP XẾP THEO SỐ ĐIỆN THOẠI ═════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -968,7 +968,7 @@ public class OrderView {
     }
 
     private void sortByFullName(long userId) {
-        System.out.println("░░░░░░░░ SẮP XẾP THEO TÊN KHÁCH HÀNG ░░░░░░░░");
+        System.out.println("═══════ SẮP XẾP THEO TÊN KHÁCH HÀNG ═══════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -998,7 +998,7 @@ public class OrderView {
     }
 
     private void sortById(long userId) {
-        System.out.println("░░░░░░░░░░ SẮP XẾP THEO ID ░░░░░░░░░░");
+        System.out.println("══════════ SẮP XẾP THEO ID ══════════");
         User user = userService.findById(userId);
         AppUtils.menuSort();
         int option;
@@ -1028,36 +1028,36 @@ public class OrderView {
     }
 
     private void menuSortOrder() {
-        System.out.println("░░░░░░░░░░░ SẮP XẾP HÓA ĐƠN ░░░░░░░░░░");
-        System.out.println("░                                    ░");
-        System.out.println("░    1. Sắp xếp theo ID.             ░");
-        System.out.println("░    2. Sắp xếp theo khách hàng.     ░");
-        System.out.println("░    3. Sắp xếp theo số điện thoại.  ░");
-        System.out.println("░    4. Sắp xếp theo địa chỉ.        ░");
-        System.out.println("░    5. Sắp xếp theo đơn giá.        ░");
-        System.out.println("░    6. Sắp xếp theo nhân viên.      ░");
-        System.out.println("░    7. Sắp xếp theo thời gian tạo.  ░");
-        System.out.println("░    8. Trở lại.                     ░");
-        System.out.println("░    0. Thoát.                       ░");
-        System.out.println("░                                    ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════ SẮP XẾP HÓA ĐƠN ═══════════");
+        System.out.println("║                                     ║");
+        System.out.println("║    1. Sắp xếp theo ID.              ║");
+        System.out.println("║    2. Sắp xếp theo khách hàng.      ║");
+        System.out.println("║    3. Sắp xếp theo số điện thoại.   ║");
+        System.out.println("║    4. Sắp xếp theo địa chỉ.         ║");
+        System.out.println("║    5. Sắp xếp theo đơn giá.         ║");
+        System.out.println("║    6. Sắp xếp theo nhân viên.       ║");
+        System.out.println("║    7. Sắp xếp theo thời gian tạo.   ║");
+        System.out.println("║    8. Trở lại.                      ║");
+        System.out.println("║    0. Thoát.                        ║");
+        System.out.println("║                                     ║");
+        System.out.println("═══════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }
 
     private void menuMemberSortOrder() {
-        System.out.println("░░░░░░░░░░░ SẮP XẾP HÓA ĐƠN ░░░░░░░░░░");
-        System.out.println("░                                    ░");
-        System.out.println("░    1. Sắp xếp theo ID.             ░");
-        System.out.println("░    2. Sắp xếp theo khách hàng.     ░");
-        System.out.println("░    3. Sắp xếp theo số điện thoại.  ░");
-        System.out.println("░    4. Sắp xếp theo địa chỉ.        ░");
-        System.out.println("░    5. Sắp xếp theo đơn giá.        ░");
-        System.out.println("░    6. Sắp xếp theo thời gian tạo.  ░");
-        System.out.println("░    7. Trở lại.                     ░");
-        System.out.println("░    0. Thoát.                       ░");
-        System.out.println("░                                    ░");
-        System.out.println("░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░");
+        System.out.println("═══════════ SẮP XẾP HÓA ĐƠN ═══════════");
+        System.out.println("║                                     ║");
+        System.out.println("║    1. Sắp xếp theo ID.              ║");
+        System.out.println("║    2. Sắp xếp theo khách hàng.      ║");
+        System.out.println("║    3. Sắp xếp theo số điện thoại.   ║");
+        System.out.println("║    4. Sắp xếp theo địa chỉ.         ║");
+        System.out.println("║    5. Sắp xếp theo đơn giá.         ║");
+        System.out.println("║    6. Sắp xếp theo thời gian tạo.   ║");
+        System.out.println("║    7. Trở lại.                      ║");
+        System.out.println("║    0. Thoát.                        ║");
+        System.out.println("║                                     ║");
+        System.out.println("═══════════════════════════════════════");
         System.out.println("Nhập lựa chọn: ");
         System.out.print(" => ");
     }

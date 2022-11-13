@@ -3,40 +3,47 @@ package model;
 import java.time.Instant;
 
 public class User {
-    public long id;
+    private long id;
     private String userName;
     private String passWord;
     private String fullName;
     private String email;
-    private String appliances;
+    private String phone;
     private String address;
     private Role role;
     private Instant createdAt;
     private Instant updatedAt;
 
-    public User(){
+    public User() {
     }
 
-    public User(long id, String userName, String passWord, String fullName, String email, String appliances, String address, Role role, Instant createdAt, Instant updatedAt) {
+    public User(long id, String userName,
+                String passWord, String fullName,
+                String email, String phone,
+                String address, Role role,
+                Instant createdAt, Instant updatedAt) {
         this.id = id;
         this.userName = userName;
         this.passWord = passWord;
         this.fullName = fullName;
         this.email = email;
-        this.appliances = appliances;
+        this.phone = phone;
         this.address = address;
         this.role = role;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
     }
 
-    public User(long id, String userName, String passWord, String fullName, String email, String appliances, String address, Role role) {
+    public User(long id, String userName,
+                String passWord, String fullName,
+                String email, String phone,
+                String address, Role role) {
         this.id = id;
         this.userName = userName;
         this.passWord = passWord;
         this.fullName = fullName;
         this.email = email;
-        this.appliances = appliances;
+        this.phone = phone;
         this.address = address;
         this.role = role;
     }
@@ -49,7 +56,7 @@ public class User {
         user.passWord = fields[2];
         user.fullName = fields[3];
         user.email = fields[4];
-        user.appliances = fields[5];
+        user.phone = fields[5];
         user.address = fields[6];
         user.role = Role.parseRole(fields[7]);
         user.createdAt = Instant.parse(fields[8]);
@@ -62,7 +69,7 @@ public class User {
         return id;
     }
 
-    public void setId(long id) {
+    private void setId(long id) {
         this.id = id;
     }
 
@@ -70,7 +77,7 @@ public class User {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    private void setUserName(String userName) {
         this.userName = userName;
     }
 
@@ -98,12 +105,12 @@ public class User {
         this.email = email;
     }
 
-    public String getAppliances() {
-        return appliances;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setAppliances(String appliances) {
-        this.appliances = appliances;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getAddress() {
@@ -145,7 +152,7 @@ public class User {
                 passWord + "," +
                 fullName + "," +
                 email + "," +
-                appliances + "," +
+                phone + "," +
                 address + "," +
                 role + "," +
                 createdAt + "," +

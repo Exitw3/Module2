@@ -125,7 +125,7 @@ public class LoginView {
             System.out.println("Tài khoản hoặc mật khẩu không đúng!");
             AppUtils.pressAnyKeyToContinue();
         } else {
-            System.out.println("\n    ════ ĐĂNG NHẬP THÀNH CÔNG ════");
+            System.out.println("\n════ ĐĂNG NHẬP THÀNH CÔNG ════");
             AppUtils.pressAnyKeyToContinue();
             if (role == Role.ADMIN) {
                 AdminView.launch(userId);
