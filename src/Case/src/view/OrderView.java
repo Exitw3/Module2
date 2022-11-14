@@ -82,7 +82,7 @@ public class OrderView {
                 ordersFind.add(order);
             }
         }
-        System.out.printf("═════════════════════════════════════ DOANH THU THÁNG %s ═════════════════════════════════════\n", month);
+        System.out.printf("════════════════════════════════════════ DOANH THU THÁNG %s ══════════════════════════════════\n", month);
         System.out.println("║                                                                                                     ║");
         System.out.println("║-----------------------------------------------------------------------------------------------------║");
         System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
@@ -274,6 +274,7 @@ public class OrderView {
         } while (isRetryOrder(orderId));
     }
 
+
     private String inputAddress(InputOption option) {
         switch (option) {
             case ADD:
@@ -295,7 +296,7 @@ public class OrderView {
     private String inputFullName(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập tên khách hàng (Ký tự đầu của từng từ phải ghi hoa, VD: Lý Thanh Tùng)");
+                System.out.println("Nhập tên khách hàng (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
                 break;
             case UPDATE:
                 System.out.println("Nhập tên mới: ");
@@ -304,7 +305,7 @@ public class OrderView {
         System.out.print(" => ");
         String fullName;
         while (!ValidateUtils.isFullNameValid(fullName = scanner.nextLine())) {
-            System.out.println("Ký tự đầu của từng từ phải ghi hoa, VD: Lý Thanh Tùng");
+            System.out.println("Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên");
             System.out.print(" => ");
         }
         return fullName;

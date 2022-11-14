@@ -148,7 +148,7 @@ public class OrderItemView {
         }
         System.out.println("║-------------------------------------------------------------------------------------------------║");
         System.out.println("║                                                                                                 ║");
-        System.out.printf("║          Cám Ơn Quý Khách!                                     Tổng tiền: %-20s   ║\n", AppUtils.doubleToVND(order.getGrandTotal()));
+        System.out.printf("║            Cám Ơn Quý Khách!                                   Tổng tiền: %-20s   ║\n", AppUtils.doubleToVND(order.getGrandTotal()));
         System.out.println("║                                                                                                 ║");
         System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════");
     }

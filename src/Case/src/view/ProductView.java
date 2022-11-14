@@ -128,7 +128,7 @@ public class ProductView {
     private String inputProductName(InputOption option) {
         switch (option) {
             case ADD:
-                System.out.println("Nhập tên sản phẩm. (VD: Cây nước nóng lạnh Midea)");
+                System.out.println("Nhập tên sản phẩm (viết hoa chữ cái đầu tiên) (VD: Cây Nước Nóng Lạnh Midea)");
                 break;
             case UPDATE:
                 System.out.println("Nhập tên sản phẩm mới: ");
@@ -138,7 +138,7 @@ public class ProductView {
         String productName;
         do {
             if (!ValidateUtils.isProductNameValid(productName = scanner.nextLine())) {
-                System.out.println("Nhập tên sản phẩm (VD: Cây nước nóng lạnh Midea)");
+                System.out.println("Nhập tên sản phẩm (viết hoa chữ cái đầu tiên) (VD: Cây Nước Nóng Lạnh Midea)");
                 System.out.print(" => ");
                 continue;
             }
