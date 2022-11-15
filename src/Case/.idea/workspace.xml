@@ -137,7 +137,8 @@
       <workItem from="1668409497860" duration="5815000" />
       <workItem from="1668416883200" duration="4115000" />
       <workItem from="1668480695417" duration="7057000" />
-      <workItem from="1668488022361" duration="9060000" />
+      <workItem from="1668488022361" duration="9368000" />
+      <workItem from="1668503723874" duration="1436000" />
     </task>
     <servers />
   </component>
@@ -154,6 +155,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/service/file/OrderItemService.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/view/order/OrderItemView.java</url>
+          <line>353</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Case$User.ic" NAME="User Coverage Results" MODIFIED="1668409558808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

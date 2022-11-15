@@ -85,12 +85,12 @@ public class OrderItemView {
                     }
                 }
                 showOrderItem(orderItemService.findByOrderId(orderId), InputOption.UPDATE);
-                setProductQuantity(productId, -orderItemService.findById(id).getQuantity());
+                setProductQuantity(productId, -(orderItemService.findById(id).getQuantity()));
                 setGrandTotal(orderId);
                 System.out.printf("Đã thêm '%s' số lượng '%s' vào giỏ hàng.\n", product.getName(), quantity);
             } catch (Exception e) {
-                System.out.println("Lỗi cú pháp. Vui lòng nhập lại!");
-                System.out.println(e.getMessage());
+//                System.out.println("Lỗi cú pháp. Vui lòng nhập lại!");
+//                System.out.println(e.getMessage());
             }
         } while (isRetryAddOrderItem(orderId));
     }
