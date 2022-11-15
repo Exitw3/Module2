@@ -185,8 +185,8 @@ public class ProductView {
     }
 
     private void updateManufacturer(Product newProduct) {
-        String manufacturer = inputManufacturer(InputOption.UPDATE);
-        newProduct.setManufacturer(manufacturer);
+        String manufactuter = inputManufacturer(InputOption.UPDATE);
+        newProduct.setManufacturer(manufactuter);
         productService.update(newProduct);
         System.out.println("Cập nhật nhà sản xuất thành công!");
         AppUtils.pressAnyKeyToContinue();
