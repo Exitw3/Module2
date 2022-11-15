@@ -1,7 +1,6 @@
 package view.login;
 
 import service.file.UserService;
-import view.product.InputOption;
 
 import java.util.Scanner;
 

@@ -65,35 +65,28 @@ public class MemberView {
                 menuSettingAccount();
                 int choice = Integer.parseInt(scanner.nextLine());
                 switch (choice) {
-                    case SHOW_INFO_ACCOUNT:
-                        showInfoAccount(user);
-                        break;
-                    case CHANGE_PASSWORD:
-                        changePassWord(user);
-                        break;
-                    case CHANGE_FULL_NAME:
-                        changeFullName(user);
-                        break;
-                    case CHANGE_EMAIL:
-                        changeEmail(user);
-                        break;
-                    case CHANGE_PHONE:
-                        changePhone(user);
-                        break;
-                    case CHANGE_ADDRESS:
-                        changeAddress(user);
-                        break;
-                    case RETURN:
-                        isTrue = false;
-                        break;
-                    case EXIT_PROGRAM:
+                    case SHOW_INFO_ACCOUNT -> showInfoAccount(user);
+
+                    case CHANGE_PASSWORD -> changePassWord(user);
+
+                    case CHANGE_FULL_NAME -> changeFullName(user);
+
+                    case CHANGE_EMAIL -> changeEmail(user);
+
+                    case CHANGE_PHONE -> changePhone(user);
+
+                    case CHANGE_ADDRESS -> changeAddress(user);
+
+                    case RETURN -> isTrue = false;
+
+                    case EXIT_PROGRAM -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");

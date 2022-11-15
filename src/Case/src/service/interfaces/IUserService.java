@@ -11,8 +11,6 @@ public interface IUserService {
 
     User login(String userName, String passWord, Role role);
 
-    User passwordRetrieval(String userName, String email, String phone, Role role);
-
     void add(User newUser);
 
     void update(User newUser);

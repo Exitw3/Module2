@@ -3,7 +3,7 @@ package view.order;
 import model.Order;
 import service.file.OrderService;
 import utils.AppUtils;
-import view.product.InputOption;
+import view.login.InputOption;
 
 import java.util.List;
 import java.util.Scanner;

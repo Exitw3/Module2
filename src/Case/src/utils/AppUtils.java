@@ -1,6 +1,6 @@
 package utils;
 
-import view.product.InputOption;
+import view.login.InputOption;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;

@@ -47,19 +47,6 @@ public class UserService implements IUserService {
         return null;
     }
 
-    @Override
-    public User passwordRetrieval(String userName, String email, String phone, Role role) {
-        List<User> users = findAll();
-        for (User user : users) {
-            if (user.getUserName().equals(userName)
-                    && user.getEmail().equals(email)
-                    && user.getPhone().equals(phone)
-                    && user.getRole() == role) {
-                return user;
-            }
-        }
-        return null;
-    }
 
     @Override
     public void add(User newUser) {

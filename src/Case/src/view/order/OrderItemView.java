@@ -12,7 +12,7 @@ import service.interfaces.IProductService;
 import utils.AppUtils;
 import utils.InstantUtils;
 import view.product.ProductView;
-import view.product.InputOption;
+import view.login.InputOption;
 
 import java.util.ArrayList;
 import java.util.List;
