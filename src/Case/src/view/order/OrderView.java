@@ -1,14 +1,21 @@
-package view;
+package view.order;
 
 import model.Order;
 import model.OrderItem;
 import model.Role;
 import model.User;
-import service.*;
+import service.file.OrderItemService;
+import service.file.OrderService;
+import service.file.UserService;
+import service.interfaces.IOrderItemService;
+import service.interfaces.IOrderService;
+import service.interfaces.IUserService;
 import utils.AppUtils;
 import utils.InstantUtils;
 import utils.TypeSort;
 import utils.ValidateUtils;
+import view.login.UserView;
+import view.product.InputOption;
 
 import java.time.Instant;
 import java.util.ArrayList;
@@ -376,36 +383,30 @@ public class OrderView {
                     System.out.println("===> Chọn 't' để thêm sản phẩm \t|\t  'y' để sửa sản phẩm \t|\t 'x' để xóa sản phẩm trong giỏ hàng");
                     option = scanner.nextLine();
                     switch (option) {
-                        case "t":
+                        case "t" -> {
                             orderItemView.addOrderItem(order.getId());
                             isTrue = false;
-                            break;
-                        case "y":
+                        }
+                        case "y" -> {
                             orderItemView.updateOrderItem();
                             isTrue = false;
-                            break;
-                        case "x":
+                        }
+                        case "x" -> {
                             orderItemView.deleteOrderItem();
                             isTrue = false;
-                            break;
-                        default:
-                            System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
-                            break;
+                        }
+                        default -> System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     }
                 } else {
                     System.out.println("Giỏ hàng rỗng!");
                     System.out.println("===> Chọn 'y' để thêm sản phẩm \t|\t 'q' để quay lại");
                     option = scanner.nextLine();
                     switch (option) {
-                        case "y":
-                            orderItemView.addOrderItem(order.getId());
-                            break;
-                        case "q":
-                            isTrue = false;
-                            break;
-                        default:
-                            System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
-                            break;
+                        case "y" -> orderItemView.addOrderItem(order.getId());
+
+                        case "q" -> isTrue = false;
+
+                        default -> System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     }
                     isTrue = false;
                 }
@@ -442,15 +443,11 @@ public class OrderView {
     private long inputId(InputOption option) {
         long id;
         switch (option) {
-            case SHOW:
-                System.out.println("Nhập ID đơn hàng: ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập ID đơn hàng bạn muốn chỉnh sửa: ");
-                break;
-            case DELETE:
-                System.out.println("Nhập ID đơn hàng bạn muốn xóa: ");
-                break;
+            case SHOW -> System.out.println("Nhập ID đơn hàng: ");
+
+            case UPDATE -> System.out.println("Nhập ID đơn hàng bạn muốn chỉnh sửa: ");
+
+            case DELETE -> System.out.println("Nhập ID đơn hàng bạn muốn xóa: ");
         }
         boolean isTrue = true;
         do {
@@ -477,23 +474,23 @@ public class OrderView {
                     AppUtils.menuDelete();
                     option = Integer.parseInt(scanner.nextLine());
                     switch (option) {
-                        case 1:
+                        case 1 -> {
                             returnProductQuantityAfterDeleteOrder(id);
                             System.out.println("Xóa hóa đơn thành công!");
                             AppUtils.pressAnyKeyToContinue();
                             isTrue = false;
-                            break;
-                        case 2:
-                            isTrue = false;
-                            break;
-                        case 0:
+                        }
+
+                        case 2 -> isTrue = false;
+
+                        case 0 -> {
                             System.out.println("Exit the program...");
                             System.exit(0);
-                            break;
-                        default:
+                        }
+                        default -> {
                             System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                             System.out.print(" => ");
-                            break;
+                        }
                     }
                 } catch (Exception e) {
                     System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -510,32 +507,26 @@ public class OrderView {
                 menuFindOrder();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        findByOrderId(userId);
-                        break;
-                    case 2:
-                        findByFullName(userId);
-                        break;
-                    case 3:
-                        findByPhone(userId);
-                        break;
-                    case 4:
-                        findByAddress(userId);
-                        break;
-                    case 5:
-                        findByUserId();
-                        break;
-                    case 6:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> findByOrderId(userId);
+
+                    case 2 -> findByFullName(userId);
+
+                    case 3 -> findByPhone(userId);
+
+                    case 4 -> findByAddress(userId);
+
+                    case 5 -> findByUserId();
+
+                    case 6 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -551,29 +542,24 @@ public class OrderView {
                 menuMemberFindOrder();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        findByOrderId(userId);
-                        break;
-                    case 2:
-                        findByFullName(userId);
-                        break;
-                    case 3:
-                        findByPhone(userId);
-                        break;
-                    case 4:
-                        findByAddress(userId);
-                        break;
-                    case 5:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> findByOrderId(userId);
+
+                    case 2 -> findByFullName(userId);
+
+                    case 3 -> findByPhone(userId);
+
+                    case 4 -> findByAddress(userId);
+
+                    case 5 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -731,38 +717,30 @@ public class OrderView {
                 menuSortOrder();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        sortById(userId);
-                        break;
-                    case 2:
-                        sortByFullName(userId);
-                        break;
-                    case 3:
-                        sortByPhone(userId);
-                        break;
-                    case 4:
-                        sortByAddress(userId);
-                        break;
-                    case 5:
-                        sortByGrandTotal(userId);
-                        break;
-                    case 6:
-                        sortByUserId();
-                        break;
-                    case 7:
-                        sortByCreateTime(userId);
-                        break;
-                    case 8:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> sortById(userId);
+
+                    case 2 -> sortByFullName(userId);
+
+                    case 3 -> sortByPhone(userId);
+
+                    case 4 -> sortByAddress(userId);
+
+                    case 5 -> sortByGrandTotal(userId);
+
+                    case 6 -> sortByUserId();
+
+                    case 7 -> sortByCreateTime(userId);
+
+                    case 8 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -778,35 +756,28 @@ public class OrderView {
                 menuMemberSortOrder();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        sortById(userId);
-                        break;
-                    case 2:
-                        sortByFullName(userId);
-                        break;
-                    case 3:
-                        sortByPhone(userId);
-                        break;
-                    case 4:
-                        sortByAddress(userId);
-                        break;
-                    case 5:
-                        sortByGrandTotal(userId);
-                        break;
-                    case 6:
-                        sortByCreateTime(userId);
-                        break;
-                    case 7:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> sortById(userId);
+
+                    case 2 -> sortByFullName(userId);
+
+                    case 3 -> sortByPhone(userId);
+
+                    case 4 -> sortByAddress(userId);
+
+                    case 5 -> sortByGrandTotal(userId);
+
+                    case 6 -> sortByCreateTime(userId);
+
+                    case 7 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -822,22 +793,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByCreatedAt(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByCreatedAt(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByCreatedAt(TypeSort.DESC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByCreatedAt(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -851,16 +822,14 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showOrder(orderService.sortByUserId(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showOrder(orderService.sortByUserId(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showOrder(orderService.sortByUserId(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showOrder(orderService.sortByUserId(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -875,22 +844,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByGrandTotal(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByGrandTotal(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByGrandTotal(TypeSort.DESC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByGrandTotal(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -905,23 +874,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByAddress(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByAddress(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByAddress(TypeSort.DESC), InputOption.SORT);
-
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByAddress(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -936,22 +904,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByPhone(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByPhone(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByPhone(TypeSort.DESC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByPhone(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -966,22 +934,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByFullName(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByFullName(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortByFullName(TypeSort.DESC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortByFullName(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -996,22 +964,22 @@ public class OrderView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
+                case 1 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortById(TypeSort.ASC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortById(TypeSort.ASC, userId), InputOption.SORT);
-                    break;
-                case 2:
+                }
+                case 2 -> {
                     if (user.getRole() == Role.ADMIN)
                         showOrder(orderService.sortById(TypeSort.DESC), InputOption.SORT);
                     if (user.getRole() == Role.USER)
                         showOrder(orderService.sortById(TypeSort.DESC, userId), InputOption.SORT);
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -1122,7 +1090,7 @@ public class OrderView {
                 System.out.print(" => ");
                 String option = scanner.nextLine();
                 switch (option) {
-                    case "y":
+                    case "y" -> {
                         long id = inputIdDeleted();
                         Order orderDeleted = orderService.findByIdDeleted(id);
                         Instant createdAt = orderDeleted.getCreatedAt();
@@ -1134,14 +1102,12 @@ public class OrderView {
                         System.out.printf("===> Khôi phục đơn hàng '%s' của khách hàng '%s' thành công!\n", id, orderDeleted.getFullName());
                         AppUtils.pressAnyKeyToContinue();
                         showOrder(orderService.findAllDeleted(), InputOption.DELETE);
-                        break;
-                    case "q":
-                        isTrue = false;
-                        break;
-                    default:
+                    }
+                    case "q" -> isTrue = false;
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } while (isTrue);
         } else {

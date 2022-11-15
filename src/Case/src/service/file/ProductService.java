@@ -1,5 +1,6 @@
-package service;
+package service.file;
 
+import service.interfaces.IProductService;
 import utils.CSVUtils;
 import utils.TypeSort;
 import model.Product;

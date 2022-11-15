@@ -1,11 +1,18 @@
-package view;
+package view.order;
 
 import model.Order;
 import model.OrderItem;
 import model.Product;
-import service.*;
+import service.file.OrderItemService;
+import service.file.OrderService;
+import service.file.ProductService;
+import service.interfaces.IOrderItemService;
+import service.interfaces.IOrderService;
+import service.interfaces.IProductService;
 import utils.AppUtils;
 import utils.InstantUtils;
+import view.product.ProductView;
+import view.product.InputOption;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,10 +129,9 @@ public class OrderItemView {
 
         System.out.println("═══════════════════════════════════════ HÓA ĐƠN THANH TOÁN ════════════════════════════════════════");
         System.out.println("║                                                                                                 ║");
-        System.out.printf("║                                                                 Thời gian: %16s     ║\n", InstantUtils.instantToString(order.getCreatedAt()));
-        System.out.printf("║   Người mua: %-40s                  LH: 0777222775           ║\n", order.getFullName());
-        System.out.printf("║   Số điện thoại: %-40s                (MR. NPN)              ║\n", order.getPhone());
-        System.out.printf("║   Địa chỉ: %-40s                                             ║\n", order.getAddress());
+        System.out.printf("║   Người mua: %-25s  ĐƠN THANH TOÁN           Thời gian: %16s    ║\n", order.getFullName(), InstantUtils.instantToString(order.getCreatedAt()));
+        System.out.printf("║   Số điện thoại: %-30s                            (MR. NPN)            ║\n", order.getPhone());
+        System.out.printf("║   Địa chỉ: %-30s                             Liên Hệ: 0777222775       ║\n", order.getAddress());
         System.out.println("║                                                                                                 ║");
         System.out.println("║-------------------------------------------------------------------------------------------------║");
         System.out.printf("║ %-2s%-5s | %-11s%-19s | %-7s%-11s | %-1s%-9s | %-2s%-16s ║\n",
@@ -156,12 +162,9 @@ public class OrderItemView {
     private int inputQuantity(InputOption option, long productId) {
         Product product = productService.findProductById(productId);
         switch (option) {
-            case ADD:
-                System.out.println("Nhập số lượng sản phẩm: ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập số lượng sản phẩm mới: ");
-                break;
+            case ADD -> System.out.println("Nhập số lượng sản phẩm: ");
+
+            case UPDATE -> System.out.println("Nhập số lượng sản phẩm mới: ");
         }
         int quantity;
         do {
@@ -180,15 +183,11 @@ public class OrderItemView {
     private long inputId(InputOption option) {
         long id;
         switch (option) {
-            case ADD:
-                System.out.println("Nhập ID : ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập ID muốn chỉnh sửa: ");
-                break;
-            case DELETE:
-                System.out.println("Nhập ID muốn xóa: ");
-                break;
+            case ADD -> System.out.println("Nhập ID : ");
+
+            case UPDATE -> System.out.println("Nhập ID muốn chỉnh sửa: ");
+
+            case DELETE -> System.out.println("Nhập ID muốn xóa: ");
         }
         boolean isTrue = true;
         do {
@@ -205,15 +204,11 @@ public class OrderItemView {
 
     private long inputProductId(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập ID sản phẩm: ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập ID sản phẩm muốn chỉnh sửa: ");
-                break;
-            case DELETE:
-                System.out.println("Nhập ID sản phẩm muốn xóa: ");
-                break;
+            case ADD -> System.out.println("Nhập ID sản phẩm: ");
+
+            case UPDATE -> System.out.println("Nhập ID sản phẩm muốn chỉnh sửa: ");
+
+            case DELETE -> System.out.println("Nhập ID sản phẩm muốn xóa: ");
         }
         long id;
         boolean isTrue = true;
@@ -242,25 +237,23 @@ public class OrderItemView {
                 menuUpdateOrderItem();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
+                    case 1 -> {
                         updateProductId(orderItem);
                         isTrue = false;
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         updateQuantity(orderItem);
                         isTrue = false;
-                        break;
-                    case 3:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    }
+                    case 3 -> isTrue = false;
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai, vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Lỗi cú pháp. Vui lòng nhập lại!");
@@ -332,26 +325,24 @@ public class OrderItemView {
                 AppUtils.menuDelete();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1: {
+                    case 1 -> {
                         OrderItem orderItem = orderItemService.findById(id);
                         setProductQuantity(orderItem.getProductId(), orderItem.getQuantity());
                         orderItemService.deleteById(id);
                         System.out.println("Xóa thành công!");
                         setGrandTotal(orderItem.getOrderId());
                         isTrue = false;
-                        break;
                     }
-                    case 2:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 2 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai, vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Lỗi cú pháp. Vui lòng nhập lại!");

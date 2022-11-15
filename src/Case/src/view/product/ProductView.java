@@ -1,8 +1,8 @@
-package view;
+package view.product;
 
 import model.Product;
-import service.IProductService;
-import service.ProductService;
+import service.interfaces.IProductService;
+import service.file.ProductService;
 import utils.AppUtils;
 import utils.InstantUtils;
 import utils.TypeSort;

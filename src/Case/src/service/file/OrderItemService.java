@@ -1,7 +1,7 @@
-package service;
+package service.file;
 
-import model.Order;
 import model.OrderItem;
+import service.interfaces.IOrderItemService;
 import utils.CSVUtils;
 import utils.TypeSort;
 
@@ -147,16 +147,14 @@ public class OrderItemService implements IOrderItemService {
         if (type == TypeSort.ASC) {
             orderItems.sort((o1, o2) -> {
                 double result = o1.getId() - o2.getId();
-                if (result == 0)
-                    return 0;
+                if (result == 0) return 0;
                 return result > 0 ? 1 : -1;
             });
         }
         if (type == TypeSort.DESC) {
             orderItems.sort((o1, o2) -> {
                 double result = o1.getId() - o2.getId();
-                if (result == 0)
-                    return 0;
+                if (result == 0) return 0;
                 return result > 0 ? -1 : 1;
             });
         }
@@ -173,10 +171,4 @@ public class OrderItemService implements IOrderItemService {
         return findByIdDeleted(id) != null;
     }
 
-//    public static void main(String[] args) {
-//        OrderItemService orderItemService = new OrderItemService();
-//        OrderItem orderItem = new OrderItem(1,10,10,1668398831,1668419422);
-//        orderItemService.add(orderItem);
-//
-//    }
 }

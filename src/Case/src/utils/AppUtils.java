@@ -1,8 +1,7 @@
 package utils;
 
-import view.InputOption;
+import view.product.InputOption;
 
-import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
@@ -58,26 +57,24 @@ public class AppUtils {
     public static boolean isRetry(InputOption inputOption) {
         do {
             switch (inputOption) {
-                case ADD:
-                    System.out.println("===> Chọn 'y' để tiếp tục thêm \t|\t 'q' để trở lại \t|\t 't' để thoát.");
-                    break;
-                case UPDATE:
-                    System.out.println("===> Chọn 'y' để tiếp tục sửa \t|\t 'q' để trở lại \t|\t 't' để thoát.");
-                    break;
-                case DELETE:
-                    System.out.println("===> Chọn 'y' để tiếp tục xóa \t|\t 'q' để trở lại \t|\t 't' để thoát.");
-                    break;
-                case SHOW:
-                    System.out.println("===> Chọn 'q' để trở lại \t|\t 't' để thoát.");
-                    break;
-                case FIND:
-                    System.out.println("===> Chọn 'y' để tiếp tục tìm kiếm \t|\t 'q' để quay lại\t|\t 't' để thoát.");
-                    break;
-                case STATISTICAL:
-                    System.out.println("===> Chọn 'y' để tiếp tục xem \t|\t 'q' để quay lại\t|\t 't' để thoát.");
-                    break;
-                default:
-                    throw new IllegalStateException("Unexpected value: " + inputOption);
+                case ADD ->
+                        System.out.println("===> Chọn 'y' để tiếp tục thêm \t|\t 'q' để trở lại \t|\t 't' để thoát.");
+
+                case UPDATE ->
+                        System.out.println("===> Chọn 'y' để tiếp tục sửa \t|\t 'q' để trở lại \t|\t 't' để thoát.");
+
+                case DELETE ->
+                        System.out.println("===> Chọn 'y' để tiếp tục xóa \t|\t 'q' để trở lại \t|\t 't' để thoát.");
+
+                case SHOW -> System.out.println("===> Chọn 'q' để trở lại \t|\t 't' để thoát.");
+
+                case FIND ->
+                        System.out.println("===> Chọn 'y' để tiếp tục tìm kiếm \t|\t 'q' để quay lại\t|\t 't' để thoát.");
+
+                case STATISTICAL ->
+                        System.out.println("===> Chọn 'y' để tiếp tục xem \t|\t 'q' để quay lại\t|\t 't' để thoát.");
+
+                default -> throw new IllegalStateException("Unexpected value: " + inputOption);
             }
 
             System.out.print(" => ");
@@ -112,15 +109,6 @@ public class AppUtils {
         } while (true);
     }
 
-    static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    static SecureRandom rnd = new SecureRandom();
-
-    public static String randomString(int len){
-        StringBuilder sb = new StringBuilder(len);
-        for(int i = 0; i < len; i++)
-            sb.append(AB.charAt(rnd.nextInt(AB.length())));
-        return sb.toString();
-    }
 
     public static void menuDelete() {
         System.out.println("═════ BẠN CÓ MUỐN XÓA KHÔNG? ═════");

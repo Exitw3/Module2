@@ -12,7 +12,6 @@ public class Product {
     private Instant updatedAt;
 
     public Product(){
-
     }
 
     public Product(long id, String name, double price, int quantity, String manufacturer) {

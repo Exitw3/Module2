@@ -1,6 +1,5 @@
-package service;
+package service.interfaces;
 
-import model.Order;
 import model.Product;
 import utils.TypeSort;
 

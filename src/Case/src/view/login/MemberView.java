@@ -1,9 +1,11 @@
-package view;
+package view.login;
 
 import model.User;
-import service.IUserService;
-import service.UserService;
+import service.interfaces.IUserService;
+import service.file.UserService;
 import utils.AppUtils;
+import view.order.OrderViewLauncher;
+import view.product.ProductViewLauncher;
 
 import java.util.Scanner;
 
@@ -32,26 +34,22 @@ public class MemberView {
                 menuMemberManager();
                 int choice = Integer.parseInt(scanner.nextLine());
                 switch (choice) {
-                    case SETTING_ACCOUNT:
-                        settingAccount(userId);
-                        break;
-                    case PRODUCT_MANAGER:
-                        ProductViewLauncher.memberLaunch();
-                        break;
-                    case ORDER_MANAGER:
-                        OrderViewLauncher.memberLaunch(userId);
-                        break;
-                    case LOGOUT:
-                        isTrue = false;
-                        break;
-                    case EXIT_PROGRAM:
+                    case SETTING_ACCOUNT -> settingAccount(userId);
+
+                    case PRODUCT_MANAGER -> ProductViewLauncher.memberLaunch();
+
+                    case ORDER_MANAGER -> OrderViewLauncher.memberLaunch(userId);
+
+                    case LOGOUT -> isTrue = false;
+
+                    case EXIT_PROGRAM -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");

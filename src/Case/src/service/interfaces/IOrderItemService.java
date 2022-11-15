@@ -1,4 +1,4 @@
-package service;
+package service.interfaces;
 
 import model.OrderItem;
 import utils.TypeSort;

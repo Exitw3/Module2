@@ -1,5 +1,5 @@
 import model.Role;
-import view.MainLauncher;
+import view.login.MainLauncher;
 
 
 public class Admin {

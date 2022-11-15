@@ -1,5 +1,5 @@
 package utils;
 
 public enum TypeSort {
-    ASD, DESC, ASC;
+    ASD, DESC, ASC
 }

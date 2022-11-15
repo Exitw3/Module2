@@ -1,8 +1,9 @@
-package view;
+package view.order;
 
 import model.Order;
-import service.OrderService;
+import service.file.OrderService;
 import utils.AppUtils;
+import view.product.InputOption;
 
 import java.util.List;
 import java.util.Scanner;
@@ -75,7 +76,7 @@ public class OrderViewLauncher {
             try {
                 int option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case SHOW: {
+                    case SHOW -> {
                         List<Order> orders = orderView.findAllByUserId(userId);
                         if (orders.isEmpty()) {
                             System.out.println("Bạn chưa có đơn hàng nào!");
@@ -83,31 +84,20 @@ public class OrderViewLauncher {
                             break;
                         }
                         orderView.showOrder(orders, InputOption.SHOW);
-                        break;
                     }
-                    case ADD:
-                        orderView.addOrder(userId);
-                        break;
-                    case UPDATE:
-                        orderView.updateOrder(userId);
-                        break;
-                    case FIND_ORDER:
-                        orderView.memberFindOrder(userId);
-                        break;
-                    case SORT_ORDER:
-                        orderView.memberSortOrder(userId);
-                        break;
-                    case RETURN:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case ADD -> orderView.addOrder(userId);
+                    case UPDATE -> orderView.updateOrder(userId);
+                    case FIND_ORDER -> orderView.memberFindOrder(userId);
+                    case SORT_ORDER -> orderView.memberSortOrder(userId);
+                    case RETURN -> isTrue = false;
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception ex) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");

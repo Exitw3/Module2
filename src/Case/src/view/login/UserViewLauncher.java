@@ -1,6 +1,7 @@
-package view;
+package view.login;
 
-import service.UserService;
+import service.file.UserService;
+import view.product.InputOption;
 
 import java.util.Scanner;
 

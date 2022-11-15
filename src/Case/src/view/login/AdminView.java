@@ -1,4 +1,7 @@
-package view;
+package view.login;
+
+import view.order.OrderViewLauncher;
+import view.product.ProductViewLauncher;
 
 import java.util.Scanner;
 
@@ -19,29 +22,24 @@ public class AdminView {
                 menuAdminOption();
                 int choice = Integer.parseInt(scanner.nextLine());
                 switch (choice) {
-                    case USER_MANAGER:
-                        UserViewLauncher.launch();
-                        break;
-                    case PRODUCT_MANAGER:
-                        ProductViewLauncher.launch();
-                        break;
-                    case ORDER_MANAGER:
-                        OrderViewLauncher.launch(userId);
-                        break;
-                    case STATISTICAL_ORDER:
-                        OrderViewLauncher.statistical();
-                        break;
-                    case LOGOUT:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case USER_MANAGER -> UserViewLauncher.launch();
+
+                    case PRODUCT_MANAGER -> ProductViewLauncher.launch();
+
+                    case ORDER_MANAGER -> OrderViewLauncher.launch(userId);
+
+                    case STATISTICAL_ORDER -> OrderViewLauncher.statistical();
+
+                    case LOGOUT -> isTrue = false;
+
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp, vui lòng nhập lại!");
