@@ -11,9 +11,9 @@ public class Product {
     private Instant createdAt;
     private Instant updatedAt;
 
-   public Product(){
+    public Product(){
 
-   }
+    }
 
     public Product(long id, String name, double price, int quantity, String manufacturer) {
         this.id = id;

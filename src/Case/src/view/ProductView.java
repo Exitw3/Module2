@@ -72,12 +72,9 @@ public class ProductView {
 
     private String inputManufacturer(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập nhà sản xuất (Tên nhà sản xuất phải ghi in hoa, VD: MIDEA.)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập tên nhà sản xuất mới: ");
-                break;
+            case ADD -> System.out.println("Nhập nhà sản xuất (Tên nhà sản xuất phải ghi in hoa, VD: MIDEA.)");
+
+            case UPDATE -> System.out.println("Nhập tên nhà sản xuất mới: ");
         }
         System.out.print(" => ");
         String manufacturer;
@@ -90,12 +87,9 @@ public class ProductView {
 
     private int inputQuantity(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập số lượng sản phẩm: ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập số lượng sản phẩm mới: ");
-                break;
+            case ADD -> System.out.println("Nhập số lượng sản phẩm: ");
+
+            case UPDATE -> System.out.println("Nhập số lượng sản phẩm mới: ");
         }
         int quantity;
         do {
@@ -107,12 +101,9 @@ public class ProductView {
 
     private double inputPrice(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập giá sản phẩm: ");
-                break;
-            case UPDATE:
-                System.out.println("Nhập giá sản phẩm mới: ");
-                break;
+            case ADD -> System.out.println("Nhập giá sản phẩm: ");
+
+            case UPDATE -> System.out.println("Nhập giá sản phẩm mới: ");
         }
         double price;
         do {
@@ -127,12 +118,10 @@ public class ProductView {
 
     private String inputProductName(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập tên sản phẩm (viết hoa chữ cái đầu tiên) (VD: Cây Nước Nóng Lạnh Midea)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập tên sản phẩm mới: ");
-                break;
+            case ADD ->
+                    System.out.println("Nhập tên sản phẩm (viết hoa chữ cái đầu tiên) (VD: Cây Nước Nóng Lạnh Midea)");
+
+            case UPDATE -> System.out.println("Nhập tên sản phẩm mới: ");
         }
         System.out.print(" => ");
         String productName;
@@ -230,12 +219,9 @@ public class ProductView {
     private long inputId(InputOption option) {
         long id;
         switch (option) {
-            case UPDATE:
-                System.out.println("Nhập Id sản phẩm bạn muốn sửa: ");
-                break;
-            case DELETE:
-                System.out.println("Nhập Id sản phẩm bạn muốn xóa: ");
-                break;
+            case UPDATE -> System.out.println("Nhập Id sản phẩm bạn muốn sửa: ");
+
+            case DELETE -> System.out.println("Nhập Id sản phẩm bạn muốn xóa: ");
         }
         boolean isTrue = true;
         do {
@@ -263,23 +249,24 @@ public class ProductView {
                     AppUtils.menuDelete();
                     option = Integer.parseInt(scanner.nextLine());
                     switch (option) {
-                        case 1:
+                        case 1 -> {
                             productService.deleteById(id);
                             System.out.println("xóa sản phẩm thành công!");
                             AppUtils.pressAnyKeyToContinue();
                             isTrue = false;
-                            break;
-                        case 2:
-                            isTrue = false;
-                            break;
-                        case 0:
+                        }
+
+                        case 2 -> isTrue = false;
+
+                        case 0 -> {
                             System.out.println("Exit the program...");
                             System.exit(0);
-                            break;
-                        default:
+                        }
+
+                        default -> {
                             System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                             System.out.print(" => ");
-                            break;
+                        }
                     }
                 } catch (Exception e) {
                     System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -296,26 +283,22 @@ public class ProductView {
                 menuFindProduct();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        findByProductId();
-                        break;
-                    case 2:
-                        findByProductName();
-                        break;
-                    case 3:
-                        findByManufacturer();
-                        break;
-                    case 4:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> findByProductId();
+
+                    case 2 -> findByProductName();
+
+                    case 3 -> findByManufacturer();
+
+                    case 4 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -372,35 +355,28 @@ public class ProductView {
                 menuSortProduct();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        sortById();
-                        break;
-                    case 2:
-                        sortByProductName();
-                        break;
-                    case 3:
-                        sortByPrice();
-                        break;
-                    case 4:
-                        sortByQuantity();
-                        break;
-                    case 5:
-                        sortByManufacturer();
-                        break;
-                    case 6:
-                        sortByCreateTime();
-                        break;
-                    case 7:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> sortById();
+
+                    case 2 -> sortByProductName();
+
+                    case 3 -> sortByPrice();
+
+                    case 4 -> sortByQuantity();
+
+                    case 5 -> sortByManufacturer();
+
+                    case 6 -> sortByCreateTime();
+
+                    case 7 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -415,16 +391,14 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortByCreateAt(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortByCreateAt(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortByCreateAt(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortByCreateAt(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -438,16 +412,14 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortByManufacturer(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortByManufacturer(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortByManufacturer(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortByManufacturer(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -461,16 +433,14 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortByQuantity(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortByQuantity(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortByQuantity(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortByQuantity(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -484,16 +454,13 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortByPrice(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortByPrice(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortByPrice(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortByPrice(TypeSort.DESC), InputOption.SORT);
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -507,16 +474,13 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortByName(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortByName(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortByName(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortByName(TypeSort.DESC), InputOption.SORT);
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -530,16 +494,13 @@ public class ProductView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showProduct(productService.sortById(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showProduct(productService.sortById(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showProduct(productService.sortById(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showProduct(productService.sortById(TypeSort.DESC), InputOption.SORT);
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -602,7 +563,7 @@ public class ProductView {
                 System.out.print(" => ");
                 String option = scanner.nextLine();
                 switch (option) {
-                    case "y":
+                    case "y" -> {
                         long id = inputIdDeleted();
                         Product productDeleted = productService.findByIdDeleted(id);
                         Instant createdAt = productDeleted.getCreatedAt();
@@ -613,14 +574,12 @@ public class ProductView {
                         System.out.printf("===> Khôi phục sản phẩm '%s' có id '%s' thành công!\n", productDeleted.getName(), id);
                         AppUtils.pressAnyKeyToContinue();
                         showProduct(productService.findAllDeleted(), InputOption.DELETE);
-                        break;
-                    case "q":
-                        isTrue = false;
-                        break;
-                    default:
+                    }
+                    case "q" -> isTrue = false;
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } while (isTrue);
         } else {

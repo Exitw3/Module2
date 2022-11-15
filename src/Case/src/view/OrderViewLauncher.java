@@ -36,38 +36,30 @@ public class OrderViewLauncher {
             try {
                 int option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case SHOW:
-                        orderView.showOrder(OrderService.getInstance().findAll(), InputOption.SHOW);
-                        break;
-                    case ADD:
-                        orderView.addOrder(userId);
-                        break;
-                    case UPDATE:
-                        orderView.updateOrder(userId);
-                        break;
-                    case DELETE:
-                        orderView.deleteOrder();
-                        break;
-                    case FIND:
-                        orderView.findOrder(userId);
-                        break;
-                    case SORT:
-                        orderView.sortOrder(userId);
-                        break;
-                    case RESTORE:
-                        orderView.restoreOrder();
-                        break;
-                    case RETURN:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case SHOW -> orderView.showOrder(OrderService.getInstance().findAll(), InputOption.SHOW);
+
+                    case ADD -> orderView.addOrder(userId);
+
+                    case UPDATE -> orderView.updateOrder(userId);
+
+                    case DELETE -> orderView.deleteOrder();
+
+                    case FIND -> orderView.findOrder(userId);
+
+                    case SORT -> orderView.sortOrder(userId);
+
+                    case RESTORE -> orderView.restoreOrder();
+
+                    case RETURN -> isTrue = false;
+
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception ex) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");

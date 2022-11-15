@@ -8,8 +8,8 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 public class ProductService implements IProductService {
-    public final static String DATA_PRODUCT_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\products.csv";
-    public final static String DATA_PRODUCT_DELETED_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\data_deleted\\product_deleted.csv";
+    public final static String DATA_PRODUCT_PATH = "D:/CodeGym/Module2/src/Case/data/products.csv";
+    public final static String DATA_PRODUCT_DELETED_PATH = "D:/CodeGym/Module2/src/Case/data/data_deleted/product_deleted.csv";
     private static ProductService instance;
 
     private ProductService() {

@@ -27,38 +27,30 @@ public class ProductViewLauncher {
             try {
                 int option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case SHOW:
-                        productView.showProduct(ProductService.getInstance().findAll(), InputOption.SHOW);
-                        break;
-                    case ADD:
-                        productView.addProduct();
-                        break;
-                    case UPDATE:
-                        productView.updateProduct();
-                        break;
-                    case DELETE:
-                        productView.deleteProduct();
-                        break;
-                    case FIND:
-                        productView.FindProduct();
-                        break;
-                    case SORT:
-                        productView.sortProduct();
-                        break;
-                    case RESTORE:
-                        productView.restoreProduct();
-                        break;
-                    case RETURN:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case SHOW -> productView.showProduct(ProductService.getInstance().findAll(), InputOption.SHOW);
+
+                    case ADD -> productView.addProduct();
+
+                    case UPDATE -> productView.updateProduct();
+
+                    case DELETE -> productView.deleteProduct();
+
+                    case FIND -> productView.FindProduct();
+
+                    case SORT -> productView.sortProduct();
+
+                    case RESTORE -> productView.restoreProduct();
+
+                    case RETURN -> isTrue = false;
+
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception ex) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -92,26 +84,22 @@ public class ProductViewLauncher {
             try {
                 int option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case SHOW:
-                        productView.showProduct(ProductService.getInstance().findAll(), InputOption.SHOW);
-                        break;
-                    case FIND_MEMBER:
-                        productView.FindProduct();
-                        break;
-                    case SORT_MEMBER:
-                        productView.sortProduct();
-                        break;
-                    case RETURN_MEMBER:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case SHOW -> productView.showProduct(ProductService.getInstance().findAll(), InputOption.SHOW);
+
+                    case FIND_MEMBER -> productView.FindProduct();
+
+                    case SORT_MEMBER -> productView.sortProduct();
+
+                    case RETURN_MEMBER -> isTrue = false;
+
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception ex) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");

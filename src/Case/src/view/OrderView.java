@@ -43,7 +43,7 @@ public class OrderView {
         System.out.printf("═════════════════════════════════════════ DOANH THU NGÀY %s ════════════════════════════════════\n", day);
         System.out.println("║                                                                                                     ║");
         System.out.println("║-----------------------------------------------------------------------------------------------------║");
-        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
+        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ║\n",
                 "", "STT",
                 "", "KHÁCH HÀNG",
                 "", "SĐT",
@@ -85,7 +85,7 @@ public class OrderView {
         System.out.printf("════════════════════════════════════════ DOANH THU THÁNG %s ══════════════════════════════════\n", month);
         System.out.println("║                                                                                                     ║");
         System.out.println("║-----------------------------------------------------------------------------------------------------║");
-        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ░\n",
+        System.out.printf("║ %-2s%-5s | %-8s%-16s | %-5s%-9s | %-6s%-14s | %-5s%-17s ║\n",
                 "", "STT",
                 "", "KHÁCH HÀNG",
                 "", "SĐT",
@@ -233,23 +233,21 @@ public class OrderView {
             System.out.print(" => ");
             String option = scanner.nextLine();
             switch (option) {
-                case "y":
+                case "y" -> {
                     System.out.println("═════ XEM CHI TIẾT ĐƠN HÀNG ═════");
                     orderId = inputId(InputOption.SHOW);
                     orderItemView.showOrderItem(orderItemService.findByOrderId(orderId), InputOption.UPDATE);
-                    break;
-                case "i":
+                }
+                case "i" -> {
                     System.out.println("═══════ IN HÓA ĐƠN ═══════");
                     orderId = inputId(InputOption.SHOW);
                     orderItemView.printProductInvoice(orderId);
-                    break;
-                case "q":
-                    isTrue = false;
-                    break;
-                default:
+                }
+                case "q" -> isTrue = false;
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } while (isTrue);
     }
@@ -277,12 +275,9 @@ public class OrderView {
 
     private String inputAddress(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập địa chỉ (Ký tự đầu của từng từ phải viết hoa, VD: Huế)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập địa chỉ mới: ");
-                break;
+            case ADD -> System.out.println("Nhập địa chỉ (Ký tự đầu của từng từ phải viết hoa, VD: Huế)");
+
+            case UPDATE -> System.out.println("Nhập địa chỉ mới: ");
         }
         System.out.print(" => ");
         String address;
@@ -295,12 +290,10 @@ public class OrderView {
 
     private String inputFullName(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập tên khách hàng (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập tên mới: ");
-                break;
+            case ADD ->
+                    System.out.println("Nhập tên khách hàng (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
+
+            case UPDATE -> System.out.println("Nhập tên mới: ");
         }
         System.out.print(" => ");
         String fullName;
@@ -313,12 +306,9 @@ public class OrderView {
 
     private String inputPhone(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập số điện thoại (VD: 0123456789)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập số điện thoại mới: ");
-                break;
+            case ADD -> System.out.println("Nhập số điện thoại (VD: 0123456789)");
+
+            case UPDATE -> System.out.println("Nhập số điện thoại mới: ");
         }
         System.out.print(" => ");
         String phone;
@@ -1159,4 +1149,5 @@ public class OrderView {
             AppUtils.pressAnyKeyToContinue();
         }
     }
+
 }

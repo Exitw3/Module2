@@ -123,12 +123,12 @@ public class OrderItemView {
         System.out.println("═══════════════════════════════════════ HÓA ĐƠN THANH TOÁN ════════════════════════════════════════");
         System.out.println("║                                                                                                 ║");
         System.out.printf("║                                                                 Thời gian: %16s     ║\n", InstantUtils.instantToString(order.getCreatedAt()));
-        System.out.printf("║   Người mua: %-40s                                           ║\n", order.getFullName());
-        System.out.printf("║   Số điện thoại: %-40s                                       ║\n", order.getPhone());
+        System.out.printf("║   Người mua: %-40s                  LH: 0777222775           ║\n", order.getFullName());
+        System.out.printf("║   Số điện thoại: %-40s                (MR. NPN)              ║\n", order.getPhone());
         System.out.printf("║   Địa chỉ: %-40s                                             ║\n", order.getAddress());
         System.out.println("║                                                                                                 ║");
         System.out.println("║-------------------------------------------------------------------------------------------------║");
-        System.out.printf("║ %-2s%-5s | %-11s%-19s | %-7s%-11s | %-1s%-9s | %-2s%-16s ░\n",
+        System.out.printf("║ %-2s%-5s | %-11s%-19s | %-7s%-11s | %-1s%-9s | %-2s%-16s ║\n",
                 "", "STT",
                 "", "SẢN PHẨM",
                 "", "GIÁ",
@@ -138,7 +138,7 @@ public class OrderItemView {
         System.out.println("║-------------------------------------------------------------------------------------------------║");
         for (int i = 0; i < orderItems.size(); i++) {
             OrderItem orderItem = orderItems.get(i);
-            System.out.printf("░ %-3s%-4s | %-2s%-28s | %-2s%-16s | %-4s%-6s | %-2s%-16s ░\n",
+            System.out.printf("║ %-3s%-4s | %-2s%-28s | %-2s%-16s | %-4s%-6s | %-2s%-16s ║\n",
                     "", i + 1,
                     "", productService.findProductById(orderItem.getProductId()).getName(),
                     "", AppUtils.doubleToVND(orderItem.getPrice()),
@@ -148,7 +148,7 @@ public class OrderItemView {
         }
         System.out.println("║-------------------------------------------------------------------------------------------------║");
         System.out.println("║                                                                                                 ║");
-        System.out.printf("║            Cám Ơn Quý Khách!                                   Tổng tiền: %-20s   ║\n", AppUtils.doubleToVND(order.getGrandTotal()));
+        System.out.printf("║            Cám Ơn Quý Khách!                                   Tổng tiền: %-20s  ║\n", AppUtils.doubleToVND(order.getGrandTotal()));
         System.out.println("║                                                                                                 ║");
         System.out.println("═══════════════════════════════════════════════════════════════════════════════════════════════════");
     }

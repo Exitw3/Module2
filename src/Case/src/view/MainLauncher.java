@@ -8,4 +8,5 @@ public class MainLauncher {
     public static void mainLauncher(Role role) {
         loginView.login(role);
     }
+
 }

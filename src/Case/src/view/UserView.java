@@ -135,7 +135,7 @@ public class UserView {
                     AppUtils.menuDelete();
                     option = Integer.parseInt(scanner.nextLine());
                     switch (option) {
-                        case 1:
+                        case 1 -> {
                             if (user.getRole() == Role.ADMIN) {
                                 System.out.println("Không thể xóa tài khoản Admin!");
                             } else {
@@ -144,19 +144,19 @@ public class UserView {
                             }
                             AppUtils.pressAnyKeyToContinue();
                             isTrue = false;
-                            break;
+                        }
 
-                        case 2:
-                            isTrue = false;
-                            break;
-                        case 0:
+                        case 2 -> isTrue = false;
+
+                        case 0 -> {
                             System.out.println("Exit the program...");
                             System.exit(0);
-                            break;
-                        default:
+                        }
+
+                        default -> {
                             System.out.println("Lựa chọn sai. Vui lòng nhập!");
                             System.out.print(" => ");
-                            break;
+                        }
                     }
                 } catch (Exception e) {
                     System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -173,38 +173,30 @@ public class UserView {
                 menuSortUser();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        sortById();
-                        break;
-                    case 2:
-                        sortByUserName();
-                        break;
-                    case 3:
-                        sortByFullName();
-                        break;
-                    case 4:
-                        sortByEmail();
-                        break;
-                    case 5:
-                        sortByPhone();
-                        break;
-                    case 6:
-                        sortByRole();
-                        break;
-                    case 7:
-                        sortByAddress();
-                        break;
-                    case 8:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> sortById();
+
+                    case 2 -> sortByUserName();
+
+                    case 3 -> sortByFullName();
+
+                    case 4 -> sortByEmail();
+
+                    case 5 -> sortByPhone();
+
+                    case 6 -> sortByRole();
+
+                    case 7 -> sortByAddress();
+
+                    case 8 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -220,35 +212,28 @@ public class UserView {
                 menuFindUser();
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
-                        findById();
-                        break;
-                    case 2:
-                        findByUserName();
-                        break;
-                    case 3:
-                        findByFullName();
-                        break;
-                    case 4:
-                        findByEmail();
-                        break;
-                    case 5:
-                        findByPhone();
-                        break;
-                    case 6:
-                        findByAddress();
-                        break;
-                    case 7:
-                        isTrue = false;
-                        break;
-                    case 0:
+                    case 1 -> findById();
+
+                    case 2 -> findByUserName();
+
+                    case 3 -> findByFullName();
+
+                    case 4 -> findByEmail();
+
+                    case 5 -> findByPhone();
+
+                    case 6 -> findByAddress();
+
+                    case 7 -> isTrue = false;
+
+                    case 0 -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -343,16 +328,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortById(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortById(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortById(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortById(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -366,16 +349,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByUserName(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByUserName(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByUserName(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByUserName(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -389,16 +370,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByFullName(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByFullName(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByFullName(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByFullName(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -412,16 +391,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByEmail(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByEmail(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByEmail(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByEmail(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -435,16 +412,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByPhone(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByPhone(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByPhone(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByPhone(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -458,16 +433,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByRole(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByRole(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByRole(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByRole(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -481,16 +454,14 @@ public class UserView {
         try {
             option = Integer.parseInt(scanner.nextLine());
             switch (option) {
-                case 1:
-                    showUser(userService.sortByAddress(TypeSort.ASC), InputOption.SORT);
-                    break;
-                case 2:
-                    showUser(userService.sortByAddress(TypeSort.DESC), InputOption.SORT);
-                    break;
-                default:
+                case 1 -> showUser(userService.sortByAddress(TypeSort.ASC), InputOption.SORT);
+
+                case 2 -> showUser(userService.sortByAddress(TypeSort.DESC), InputOption.SORT);
+
+                default -> {
                     System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                     System.out.print(" => ");
-                    break;
+                }
             }
         } catch (Exception e) {
             System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -542,12 +513,9 @@ public class UserView {
     private long inputId(InputOption option) {
         long id;
         switch (option) {
-            case UPDATE:
-                System.out.println("Nhập Id tài khoản muốn chỉnh sửa: ");
-                break;
-            case DELETE:
-                System.out.println("Nhập Id tài khoản muốn chỉnh xóa: ");
-                break;
+            case UPDATE -> System.out.println("Nhập Id tài khoản muốn chỉnh sửa: ");
+
+            case DELETE -> System.out.println("Nhập Id tài khoản muốn chỉnh xóa: ");
         }
         boolean isTrue = true;
         do {
@@ -570,18 +538,20 @@ public class UserView {
             try {
                 option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case 1:
+                    case 1 -> {
                         user.setRole(Role.ADMIN);
                         isTrue = false;
-                        break;
-                    case 2:
+                    }
+
+                    case 2 -> {
                         user.setRole(Role.USER);
                         isTrue = false;
-                        break;
-                    default:
+                    }
+
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception ex) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
@@ -592,12 +562,10 @@ public class UserView {
 
     private String inputPhone(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập số điện thoại của bạn (Số điện thoại bao gồm 10 chữ số, bắt đầu bằng số 0. VD: 0123456789)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập số điện thoại mới: ");
-                break;
+            case ADD ->
+                    System.out.println("Nhập số điện thoại của bạn (Số điện thoại bao gồm 10 chữ số, bắt đầu bằng số 0. VD: 0123456789)");
+
+            case UPDATE -> System.out.println("Nhập số điện thoại mới: ");
         }
         System.out.print(" => ");
         String phone;
@@ -619,12 +587,9 @@ public class UserView {
 
     private String inputEmail(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập email của bạn (VD: Nguyen@codegym.vn)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập email mới: ");
-                break;
+            case ADD -> System.out.println("Nhập email của bạn (VD: Nguyen@codegym.vn)");
+
+            case UPDATE -> System.out.println("Nhập email mới: ");
         }
         System.out.print(" => ");
         String email;
@@ -646,12 +611,9 @@ public class UserView {
 
     private String inputAddress(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập địa chỉ (Ký tự đầu của từng từ phải viết hoa, VD: Huế)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập địa chỉ mới: ");
-                break;
+            case ADD -> System.out.println("Nhập địa chỉ (Ký tự đầu của từng từ phải viết hoa, VD: Huế)");
+
+            case UPDATE -> System.out.println("Nhập địa chỉ mới: ");
         }
         System.out.print(" => ");
         String address;
@@ -664,12 +626,9 @@ public class UserView {
 
     private String inputFullName(InputOption option) {
         switch (option) {
-            case ADD:
-                System.out.println("Nhập tên (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
-                break;
-            case UPDATE:
-                System.out.println("Nhập họ và tên mới: ");
-                break;
+            case ADD -> System.out.println("Nhập tên (Ký tự đầu của từng từ phải ghi hoa, VD: Nguyễn Phúc Nguyên)");
+
+            case UPDATE -> System.out.println("Nhập họ và tên mới: ");
         }
         System.out.print(" => ");
         String fullName;

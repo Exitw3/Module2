@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserService implements IUserService {
-    public final static String DATA_USER_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\users.csv";
+    public final static String DATA_USER_PATH = "D:/CodeGym/Module2/src/Case/data/users.csv";
     private static UserService instance;
 
     private UserService() {

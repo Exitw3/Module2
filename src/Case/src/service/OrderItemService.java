@@ -1,5 +1,6 @@
 package service;
 
+import model.Order;
 import model.OrderItem;
 import utils.CSVUtils;
 import utils.TypeSort;
@@ -8,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderItemService implements IOrderItemService {
-    public final static String DATA_ORDER_ITEM_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\order_items.csv";
-    public final static String DATA_ORDER_ITEM_DELETE_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\data_deleted\\order_items_deleted.csv";
+    public final static String DATA_ORDER_ITEM_PATH = "D:/CodeGym/Module2/src/Case/data/order_items.csv";
+    public final static String DATA_ORDER_ITEM_DELETE_PATH = "D:/CodeGym/Module2/src/Case/data/data_deleted/order_items_deleted.csv";
     private static OrderItemService instance;
 
     private OrderItemService() {
@@ -171,4 +172,11 @@ public class OrderItemService implements IOrderItemService {
     public boolean existByIdDeleted(long id) {
         return findByIdDeleted(id) != null;
     }
+
+//    public static void main(String[] args) {
+//        OrderItemService orderItemService = new OrderItemService();
+//        OrderItem orderItem = new OrderItem(1,10,10,1668398831,1668419422);
+//        orderItemService.add(orderItem);
+//
+//    }
 }

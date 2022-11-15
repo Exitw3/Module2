@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderService implements IOrderService {
-    public final static String DATA_ORDER_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\orders.csv";
-    public final static String DATA_ORDER_DELETE_PATH = "D:\\CodeGym\\Module2\\src\\Case\\data\\data_deleted\\orders_deleted.csv";
+    public final static String DATA_ORDER_PATH = "D:/CodeGym/Module2/src/Case/data/orders.csv";
+    public final static String DATA_ORDER_DELETE_PATH = "D:/CodeGym/Module2/src/Case/data/data_deleted/orders_deleted.csv";
     private static OrderService instance;
 
     private OrderService() {

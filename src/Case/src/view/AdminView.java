@@ -7,9 +7,9 @@ public class AdminView {
     private static final int USER_MANAGER = 1;
     private static final int PRODUCT_MANAGER = 2;
     private static final int ORDER_MANAGER = 3;
+    private static final int STATISTICAL_ORDER = 4;
     private static final int LOGOUT = 5;
     private static final int EXIT = 6;
-    private static final int STATISTICAL_ORDER = 4;
 
     public static void launch(long userId) {
         Scanner scanner = new Scanner(System.in);

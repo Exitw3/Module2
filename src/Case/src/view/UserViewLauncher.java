@@ -25,35 +25,28 @@ public class UserViewLauncher {
             try {
                 int option = Integer.parseInt(scanner.nextLine());
                 switch (option) {
-                    case SHOW:
-                        userView.showUser(userService.findAll(), InputOption.SHOW);
-                        break;
-                    case ADD:
-                        userView.addUser();
-                        break;
-                    case UPDATE:
-                        userView.updateUser();
-                        break;
-                    case DELETE:
-                        userView.deleteUser();
-                        break;
-                    case FIND:
-                        userView.findUser();
-                        break;
-                    case SORT:
-                        userView.sortUser();
-                        break;
-                    case RETURN:
-                        isTrue = false;
-                        break;
-                    case EXIT:
+                    case SHOW -> userView.showUser(userService.findAll(), InputOption.SHOW);
+
+                    case ADD -> userView.addUser();
+
+                    case UPDATE -> userView.updateUser();
+
+                    case DELETE -> userView.deleteUser();
+
+                    case FIND -> userView.findUser();
+
+                    case SORT -> userView.sortUser();
+
+                    case RETURN -> isTrue = false;
+
+                    case EXIT -> {
                         System.out.println("Exit the program...");
                         System.exit(0);
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("Lựa chọn sai. Vui lòng nhập lại!");
                         System.out.print(" => ");
-                        break;
+                    }
                 }
             } catch (Exception e) {
                 System.out.println("Sai cú pháp. Vui lòng nhập lại!");
