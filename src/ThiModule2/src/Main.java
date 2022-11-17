@@ -18,7 +18,7 @@ public class Main {
                 } while (choosen > 9 || choosen < 0);
                 switch (choosen) {
                     case 1:
-                        displayProduct();
+                        list();
                         break;
                     case 2:
                         addProduct();
@@ -54,7 +54,7 @@ public class Main {
         } while (choosen != 9);
     }
 
-    private static void displayProduct() {
+    private static void list() {
         System.out.println("______________________________");
         for (Product product : productList) {
             product.display();
